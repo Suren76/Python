@@ -1,0 +1,27 @@
+Person should have: first_name - str, last_name - str, gender - str, age - int.
+It should have appropriate getters and setters. 
+It should have a method: __str__().
+
+Author is inherited from Person.
+Author should have email, pseudonym(if there is).
+It should have appropriate getters and setters. 
+It should have a __str__ method.
+
+
+Reader is inherited from Person.
+Reader should have: id - int, reads_book - array of Book, favorite_books -array of Book, books_to_read_later - array of Book.
+It should have appropriate getters and setters. 
+It should have a method: __str__().
+
+Book should have: title - str , author(class Author), published_date - str.
+It should have appropriate getters and setters.
+It should have a method: author_name() -  return author full name or if author have pseudonym return it.
+It should have a __str__ method.
+
+Library should have: address - str, books(class Book) - array of Book, readers(class Reader) - array of Reader.
+It should have appropriate getters and setters.
+It should have a method: books_quantity - returns the number of books
+It should have a method: add_book(new_book) - add new book to the library or add array of book if there are several.
+It should have a method: check_readerId(reader_id) - returns true if there exist a reader otherwise  false.
+It should have a method:check_book(book_title, book_author) - returns true if there exist a book otherwise false.
+It should have a __str__ method.
