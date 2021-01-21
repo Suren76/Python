@@ -19,4 +19,3 @@ def test_multiplication():
 
 def test_square_root():
     assert square_root(49) == 7
-
