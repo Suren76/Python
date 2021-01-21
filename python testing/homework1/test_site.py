@@ -10,15 +10,15 @@ class TestLambdatestTodoApp:
         self.driver.get("https://lambdatest.github.io/sample-todo-app/")
         assert "Sample page - lambdatest.com" == self.driver.title
 
-    def test_item_add(self, cmdopt):
+    def test_item_add(self, add_text):
         li_len_before = len(self.driver.find_elements_by_tag_name("li"))
 
         self.driver.find_element_by_id("sampletodotext").send_keys("new book")
         self.driver.find_element_by_id("addbutton").click()
-        self.driver.find_element_by_id("sampletodotext").send_keys(cmdopt)
+        self.driver.find_element_by_id("sampletodotext").send_keys(add_text)
         self.driver.find_element_by_id("addbutton").click()
 
-        add_todo = ["new book", cmdopt]
+        add_todo = ["new book", add_text]
 
         li_len_after = len(self.driver.find_elements_by_tag_name("li"))
         assert li_len_before + len(add_todo) == li_len_after
