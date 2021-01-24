@@ -1,10 +1,17 @@
 from time import sleep
+
 import pytest
 from selenium.webdriver.common.by import By
+
+from selenium.webdriver.chrome.webdriver import WebDriver
 
 
 @pytest.mark.usefixtures("chrome_driver")
 class TestLambdatestTodoApp:
+
+    #@pytest.fixture(autouse=True)
+    def _setup(self, driver):
+        self.driver = driver
 
     def test_page(self):
         self.driver.get("https://lambdatest.github.io/sample-todo-app/")
@@ -31,3 +38,7 @@ class TestLambdatestTodoApp:
     @pytest.mark.skip
     def test_fail(self):
         assert False
+
+    # @pytest.mark.skip
+    def test_case(self):
+        print(self.driver.page_source)
