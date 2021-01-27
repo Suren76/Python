@@ -18,7 +18,7 @@ class BuyAmLoginPage(BasePage):
         password_input.clear()
         password_input.send_keys(str(password))
 
-    def login_account(self):
+    def log_in_account(self):
         self.driver.find_element(By.XPATH, "//button[@class='register--login-btn btn is--primary is--large']").click()
 
 

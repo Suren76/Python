@@ -1,4 +1,5 @@
 from pages.basepage import BasePage
+from pages.login import BuyAmLoginPage
 import pytest
 from selenium.webdriver.common.by import By
 
@@ -16,12 +17,18 @@ class TestSection:
     def test_product_block(self):
         def test_wishlist_button(self):
             # not log in
+            if self.page.find_element(By.XPATH, "//nav/ul/li[5]/div/div[2]/div/ul/li[7]/a").text == 'Մուտք':
             self.page.driver.find_element(By.XPATH, "//section/div/div/div/div\
             /div[1]/section/div[2]/div/div/div/div/div/div/form/button").click()
 
             assert self.page.driver.current_url == "https://buy.am/hy/register/index/sTarget/note/sTargetAction/index"
 
-            # logged in
+            # logged in 
+            if self.page.find_element(By.XPATH, "//nav/ul/li[5]/div/div[2]/div/ul/li[7]/a/span").text == 'Դուրս գալ':
+                self.page.driver.find_element(By.XPATH, "//section/div/div/div/div\
+                /div[1]/section/div[2]/div/div/div/div/div/div/form/button").click()
+
+                assert self.page.driver.current_url == "https://buy.am/hy/note"
 
         def test_add_busket_button(self):
             busket_len_before = int(self.page.driver.find_element(By.XPATH, "//header/div/nav/ul/li[4]/a/span").text)

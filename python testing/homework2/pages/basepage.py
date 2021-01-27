@@ -10,22 +10,22 @@ from selenium.webdriver.support import expected_conditions as EC
 class BasePage:
     def __init__(self, driver: WebDriver):
         self.driver: WebDriver = driver
-        self.page = ''
+        self.page_url = ''
         self.BASE_URL = os.environ['URL']
 
     def current_url(self):
         return self.driver.current_url
 
     def load(self):
-        with allure.step(f"Load the '{self.page}' page."):
+        with allure.step(f"Load the '{self.page_url}' page."):
             self.driver.get(self.correct_url())
 
     def correct_url(self):
-        return self.BASE_URL + self.page
+        return self.BASE_URL + self.page_url
 
     def is_loaded(self):
         if not self.at_page():
-            raise RuntimeError(f"The {self.page} page is not loaded properly")
+            raise RuntimeError(f"The {self.page_url} page is not loaded properly")
 
     def get(self):
         if not self.at_page():
@@ -47,7 +47,7 @@ class BasePage:
         search_input.send_keys(phrase)
         self.driver.find_element(By.CLASS_NAME, "main-search--button").click()
 
-    def link_button(self, buttons_locat_xpath,time=10):
+    def link_button(self, button_locat_xpath,time=10):
         self.get()
         elm = WebDriverWait(self.driver,time).until(EC.presence_of_element_located(By.XPATH , button_locat_xpath),'no element')
         elm.click()
