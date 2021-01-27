@@ -1,0 +1,3875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="content--wrapper">
+<div class="register--content panel content block has--border is--rounded" id="registration" data-register="true">
+<form method="post" action="https://buy.am/hy/register/saveRegister/sTarget/note/sTargetAction/index" class="panel register--form" id="register--form">
+<div class="panel register--personal">
+<h2 class="panel--title">
+Գրանցում
+</h2>
+<div class="panel--body is--wide">
+<div class="register--customertype">
+<div class="select-field is--hidden">
+<select id="register_personal_customer_type" name="register[personal][customer_type]">
+<option value="private" selected="selected">Private customer</option>
+</select>
+</div>
+</div>
+<div class="register--salutation field--select select-field">
+<select name="register[personal][salutation]" id="salutation" required="required" aria-required="true" class="is--required">
+<option value="" disabled="disabled" selected="selected">
+Ողջունում*
+</option>
+<option value="Պրն">Պրն</option>
+<option value="Տկն">Տկն</option>
+<option value="Միսս">Միսս</option>
+<option value="Հարգելի">Հարգելի</option>
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Miss">Miss</option>
+<option value="Мистер">Мистер</option>
+<option value="Мисс">Мисс</option>
+<option value="Миссис">Миссис</option>
+</select>
+</div>
+<div class="register--firstname">
+<input autocomplete="section-personal given-name" name="register[personal][firstname]" type="text" required="required" aria-required="true" placeholder="Ձեր անունը*" id="firstname" value="" class="register--field is--required">
+</div>
+<div class="register--lastname">
+<input autocomplete="section-personal family-name" name="register[personal][lastname]" type="text" required="required" aria-required="true" placeholder="Ձեր ազգանունը*" id="lastname" value="" class="register--field is--required">
+</div>
+<div class="register--email">
+<input autocomplete="section-personal email" name="register[personal][email]" type="email" required="required" aria-required="true" placeholder="Էլեկտրոնային փոստ*" id="register_personal_email" value="" class="register--field email is--required">
+</div>
+<div class="register--account-information">
+<div class="register--password">
+<input name="register[personal][password]" type="password" autocomplete="new-password" required="required" aria-required="true" placeholder="Ձեր գաղտնաբառը*" id="register_personal_password" class="register--field password is--required">
+</div>
+<div class="register--passwordconfirm">
+<input name="register[personal][passwordConfirmation]" type="password" autocomplete="new-password" aria-required="true" placeholder="Կրկնեք գաղտնաբառը*" id="register_personal_passwordConfirmation" class="register--field passwordConfirmation is--required" required="required">
+</div>
+</div>
+<div class="register--phone">
+<input autocomplete="section-personal tel" name="register[personal][phone]" type="tel" required="required" aria-required="true" placeholder="Հեռախոսահամար*" id="phone" value="" class="register--field is--required">
+</div>
+</div>
+</div>
+<div class="panel register--company is--hidden">
+<h2 class="panel--title is--underline">
+Company
+</h2>
+<div class="panel--body is--wide">
+<div class="register--companyname">
+<input autocomplete="section-billing billing organization" name="register[billing][company]" type="text" aria-required="true" placeholder="Company name*" id="register_billing_company" value="" class="register--field is--required" disabled="disabled">
+</div>
+<div class="register--department">
+<input autocomplete="section-billing billing organization-title" name="register[billing][department]" type="text" placeholder="Department" id="register_billing_department" value="" class="register--field" disabled="disabled">
+</div>
+<div class="register--vatId">
+<input name="register[billing][vatId]" type="text" placeholder="VAT ID" id="register_billing_vatid" value="" class="register--field" disabled="disabled">
+</div>
+</div>
+</div>
+<div class="panel register--address">
+<div class="panel--body is--wide">
+<div class="register--country field--select select-field  is--hidden">
+<select name="register[billing][country]" data-address-type="billing" id="country" required="required" aria-required="true" class="select--country is--required">
+<option value="57" selected="selected" stateselector="country_57_states">
+Armenia
+</option>
+</select>
+</div>
+<div class="country-area-state-selection" id="city-select-container">
+<div id="city-select" data-country-id="57" data-address-type="billing" class="register--state-selection field--select select-field">
+<select disabled="disabled" name="register[billing][country_state_57]" placeholder="Քաղաքը*" class="select--state  chosen-select" data-im-billing-countryid="57" style="display: none;">
+<option selected="selected">Քաղաք</option>
+<option value="70">
+Երևան
+</option>
+<option value="191">
+Աբովյան
+</option>
+<option value="76">
+Ագարակ
+</option>
+<option value="868">
+Ագարակաձոր
+</option>
+<option value="77">
+Ագարակավան
+</option>
+<option value="371">
+Ազատ
+</option>
+<option value="919">
+Ազատամուտ
+</option>
+<option value="636">
+Ազատան
+</option>
+<option value="192">
+Ազատաշեն
+</option>
+<option value="193">
+Ազատավան
+</option>
+<option value="869">
+Ազատեկ
+</option>
+<option value="461">
+Ազնվաձոր
+</option>
+<option value="462">
+Աթան
+</option>
+<option value="78">
+Ալագյազ
+</option>
+<option value="285">
+Ալաշկերտ
+</option>
+<option value="463">
+Ալավերդի
+</option>
+<option value="573">
+Ալափարս
+</option>
+<option value="749">
+Ալվանք
+</option>
+<option value="637">
+Ալվար
+</option>
+<option value="464">
+Ախթալա
+</option>
+<option value="750">
+Ախլաթյան
+</option>
+<option value="638">
+Ախուրիկ
+</option>
+<option value="640">
+Ախուրյան
+</option>
+<option value="639">
+Ախուրյանի կայարան
+</option>
+<option value="372">
+Ախպրաձոր
+</option>
+<option value="870">
+Ախտա
+</option>
+<option value="286">
+Ակնալիճ
+</option>
+<option value="920">
+Ակնաղբյուր
+</option>
+<option value="287">
+Ակնաշեն
+</option>
+<option value="465">
+Ակներ
+</option>
+<option value="79">
+Ակունք
+</option>
+<option value="466">
+Ահնիձոր
+</option>
+<option value="574">
+Աղավնաձոր
+</option>
+<option value="921">
+Աղավնավանք
+</option>
+<option value="288">
+Աղավնատուն
+</option>
+<option value="373">
+Աղբերք
+</option>
+<option value="641">
+Աղին
+</option>
+<option value="751">
+Աղիտու
+</option>
+<option value="80">
+Աղձք
+</option>
+<option value="871">
+Աղնջաձոր
+</option>
+<option value="752">
+Աղվանի
+</option>
+<option value="642">
+Աղվորիկ
+</option>
+<option value="753">
+Աճանան
+</option>
+<option value="922">
+Աճարկուտ
+</option>
+<option value="872">
+Ամաղու
+</option>
+<option value="289">
+Ամասիա
+</option>
+<option value="290">
+Ամբերդ
+</option>
+<option value="467">
+Ամոջ
+</option>
+<option value="468">
+Ամրակից
+</option>
+<option value="643">
+Այգաբաց
+</option>
+<option value="194">
+Այգավան
+</option>
+<option value="195">
+Այգեզարդ
+</option>
+<option value="291">
+Այգեկ
+</option>
+<option value="469">
+Այգեհատ
+</option>
+<option value="923">
+Այգեհովիտ
+</option>
+<option value="754">
+Այգեձոր
+</option>
+<option value="292">
+Այգեշատ
+</option>
+<option value="196">
+Այգեպատ
+</option>
+<option value="924">
+Այգեպար
+</option>
+<option value="197">
+Այգեստան
+</option>
+<option value="293">
+Այգեվան
+</option>
+<option value="374">
+Այգուտ
+</option>
+<option value="198">
+Այնթապ
+</option>
+<option value="925">
+Այրում
+</option>
+<option value="375">
+Այրք
+</option>
+<option value="755">
+Անգեղակոթ
+</option>
+<option value="644">
+Անիավան
+</option>
+<option value="645">
+Անիպեմզա
+</option>
+<option value="646">
+Անուշավան
+</option>
+<option value="376">
+Անտառամեջ
+</option>
+<option value="470">
+Անտառամուտ
+</option>
+<option value="756">
+Անտառաշատ
+</option>
+<option value="471">
+Անտառաշեն
+</option>
+<option value="81">
+Անտառուտ
+</option>
+<option value="82">
+Աշնակ
+</option>
+<option value="757">
+Աշոտավան
+</option>
+<option value="647">
+Աշոցք
+</option>
+<option value="83">
+Աշտարակ
+</option>
+<option value="926">
+Աչաջուր
+</option>
+<option value="294">
+Ապագա
+</option>
+<option value="472">
+Ապավեն
+</option>
+<option value="84">
+Ապարան
+</option>
+<option value="758">
+Աջաբաջ
+</option>
+<option value="759">
+Առաջաձոր
+</option>
+<option value="295">
+Առատաշեն
+</option>
+<option value="648">
+Առափի
+</option>
+<option value="575">
+Առինջ
+</option>
+<option value="377">
+Աստղաձոր
+</option>
+<option value="378">
+Ավազան
+</option>
+<option value="85">
+Ավան
+</option>
+<option value="199">
+Ավշար
+</option>
+<option value="86">
+Ավշեն
+</option>
+<option value="576">
+Արա
+</option>
+<option value="87">
+Արագած
+</option>
+<option value="88">
+Արագածավան
+</option>
+<option value="89">
+Արագածոտն
+</option>
+<option value="296">
+Արազափ
+</option>
+<option value="200">
+Արալեզ
+</option>
+<option value="577">
+Արամուս
+</option>
+<option value="90">
+Արայի
+</option>
+<option value="649">
+Արավետ
+</option>
+<option value="760">
+Արավուս
+</option>
+<option value="873">
+Արատես
+</option>
+<option value="201">
+Արարատ
+</option>
+<option value="297">
+Արաքս
+</option>
+<option value="202">
+Արաքսավան
+</option>
+<option value="203">
+Արբաթ
+</option>
+<option value="204">
+Արգավանդ
+</option>
+<option value="71">
+Արգավանդ
+</option>
+<option value="578">
+Արգել
+</option>
+<option value="298">
+Արգինա
+</option>
+<option value="650">
+Արդենիս
+</option>
+<option value="473">
+Արդվի
+</option>
+<option value="651">
+Արեգնադեմ
+</option>
+<option value="379">
+Արեգունի
+</option>
+<option value="874">
+Արենի
+</option>
+<option value="579">
+Արզական
+</option>
+<option value="580">
+Արզնի
+</option>
+<option value="652">
+Արթիկ
+</option>
+<option value="875">
+Արին
+</option>
+<option value="474">
+Արծնի
+</option>
+<option value="927">
+Արծվաբերդ
+</option>
+<option value="761">
+Արծվանիկ
+</option>
+<option value="380">
+Արծվանիստ
+</option>
+<option value="928">
+Արճիս
+</option>
+<option value="475">
+Արմանիս
+</option>
+<option value="205">
+Արմաշ
+</option>
+<option value="300">
+Արմավիր
+</option>
+<option value="299">
+Արմավիր (Հոկտեմբերյան)
+</option>
+<option value="301">
+Արշալույս
+</option>
+<option value="91">
+Արուճ
+</option>
+<option value="476">
+Արջուտ
+</option>
+<option value="876">
+Արտաբույնք
+</option>
+<option value="302">
+Արտամետ
+</option>
+<option value="381">
+Արտանիշ
+</option>
+<option value="92">
+Արտաշավան
+</option>
+<option value="206">
+Արտաշատ
+</option>
+<option value="303">
+Արտաշար
+</option>
+<option value="581">
+Արտավազ
+</option>
+<option value="877">
+Արտավան
+</option>
+<option value="93">
+Արտենի
+</option>
+<option value="304">
+Արտիմետ
+</option>
+<option value="653">
+Արփենի
+</option>
+<option value="878">
+Արփի
+</option>
+<option value="382">
+Արփունք
+</option>
+<option value="207">
+Արևաբույր
+</option>
+<option value="305">
+Արևադաշտ
+</option>
+<option value="477">
+Արևածագ
+</option>
+<option value="306">
+Արևաշատ
+</option>
+<option value="478">
+Արևաշող
+</option>
+<option value="307">
+Արևիկ
+</option>
+<option value="762">
+Արևիս
+</option>
+<option value="208">
+Արևշատ
+</option>
+<option value="94">
+Արևուտ
+</option>
+<option value="95">
+Ափնա
+</option>
+<option value="479">
+Աքորի
+</option>
+<option value="308">
+Բագարան
+</option>
+<option value="654">
+Բագրավան
+</option>
+<option value="929">
+Բագրատաշեն
+</option>
+<option value="96">
+Բազմաղբյուր
+</option>
+<option value="480">
+Բազում
+</option>
+<option value="582">
+Բալահովիտ
+</option>
+<option value="763">
+Բալաք
+</option>
+<option value="930">
+Բաղանիս
+</option>
+<option value="209">
+Բաղրամյան
+</option>
+<option value="309">
+Բամբակաշատ
+</option>
+<option value="655">
+Բայանդուր
+</option>
+<option value="656">
+Բանդիվան
+</option>
+<option value="657">
+Բասեն
+</option>
+<option value="658">
+Բավրա
+</option>
+<option value="764">
+Բարգուշատ
+</option>
+<option value="931">
+Բարեկամավան
+</option>
+<option value="383">
+Բարեպատ
+</option>
+<option value="210">
+Բարձրաշեն
+</option>
+<option value="765">
+Բարձրավան
+</option>
+<option value="879">
+Բարձրունի
+</option>
+<option value="481">
+Բենդիկ
+</option>
+<option value="659">
+Բենիամին
+</option>
+<option value="932">
+Բերդ
+</option>
+<option value="660">
+Բերդաշեն
+</option>
+<option value="933">
+Բերդավան
+</option>
+<option value="211">
+Բերդիկ
+</option>
+<option value="384">
+Բերդկունք
+</option>
+<option value="934">
+Բերքաբեր
+</option>
+<option value="212">
+Բերքանուշ
+</option>
+<option value="310">
+Բերքաշատ
+</option>
+<option value="97">
+Բերքառատ
+</option>
+<option value="482">
+Բլագոդարնոյե
+</option>
+<option value="98">
+Բյուրական
+</option>
+<option value="661">
+Բյուրակն
+</option>
+<option value="213">
+Բյուրավան
+</option>
+<option value="583">
+Բյուրեղավան
+</option>
+<option value="766">
+Բնունիս
+</option>
+<option value="483">
+Բովաձոր
+</option>
+<option value="584">
+Բուժական
+</option>
+<option value="214">
+Բուրաստան
+</option>
+<option value="585">
+Բջնի
+</option>
+<option value="767">
+Բռնակոթ
+</option>
+<option value="385">
+Գագարին
+</option>
+<option value="311">
+Գայ
+</option>
+<option value="386">
+Գանձակ
+</option>
+<option value="935">
+Գանձաքար
+</option>
+<option value="99">
+Գառնահովիտ
+</option>
+<option value="662">
+Գառնառիճ
+</option>
+<option value="586">
+Գառնի
+</option>
+<option value="387">
+Գավառ (Կամո)
+</option>
+<option value="484">
+Գարգառ
+</option>
+<option value="100">
+Գեղադիր
+</option>
+<option value="312">
+Գեղակերտ
+</option>
+<option value="101">
+Գեղաձոր
+</option>
+<option value="388">
+Գեղամաբակ
+</option>
+<option value="389">
+Գեղամասար
+</option>
+<option value="390">
+Գեղամավան
+</option>
+<option value="215">
+Գեղանիստ
+</option>
+<option value="768">
+Գեղանուշ
+</option>
+<option value="587">
+Գեղաշեն
+</option>
+<option value="485">
+Գեղասար
+</option>
+<option value="769">
+Գեղավանք
+</option>
+<option value="936">
+Գեղատափ
+</option>
+<option value="588">
+Գեղարդ
+</option>
+<option value="102">
+Գեղարոտ
+</option>
+<option value="391">
+Գեղարքունիք
+</option>
+<option value="392">
+Գեղաքար
+</option>
+<option value="770">
+Գեղի
+</option>
+<option value="393">
+Գեղհովիտ
+</option>
+<option value="216">
+Գետազատ
+</option>
+<option value="771">
+Գետաթաղ
+</option>
+<option value="937">
+Գետահովիտ
+</option>
+<option value="589">
+Գետամեջ
+</option>
+<option value="313">
+Գետաշեն
+</option>
+<option value="772">
+Գետաշեն
+</option>
+<option value="486">
+Գետավան
+</option>
+<option value="590">
+Գետարգել
+</option>
+<option value="103">
+Գետափ
+</option>
+<option value="217">
+Գետափնյա
+</option>
+<option value="394">
+Գետիկ
+</option>
+<option value="880">
+Գետիկվանք
+</option>
+<option value="663">
+Գետք
+</option>
+<option value="218">
+Գինեվետ
+</option>
+<option value="881">
+Գլաձոր
+</option>
+<option value="487">
+Գյուլագարակ
+</option>
+<option value="488">
+Գյուլլուդարա
+</option>
+<option value="664">
+Գյումրի
+</option>
+<option value="882">
+Գնդեվազ
+</option>
+<option value="883">
+Գնիշիկ
+</option>
+<option value="489">
+Գոգավան
+</option>
+<option value="490">
+Գոգարան
+</option>
+<option value="665">
+Գոգհովիտ
+</option>
+<option value="591">
+Գողթ
+</option>
+<option value="884">
+Գողթանիկ
+</option>
+<option value="773">
+Գոմարան
+</option>
+<option value="885">
+Գոմք
+</option>
+<option value="938">
+Գոշ
+</option>
+<option value="219">
+Գոռավան
+</option>
+<option value="592">
+Գոռգոչ
+</option>
+<option value="774">
+Գորայք
+</option>
+<option value="775">
+Գորիս
+</option>
+<option value="491">
+Գուգարք
+</option>
+<option value="776">
+Գուդեմնիս
+</option>
+<option value="666">
+Գուսանա
+</option>
+<option value="667">
+Գտաշեն
+</option>
+<option value="314">
+Գրիբոյեդով
+</option>
+<option value="220">
+Դալար
+</option>
+<option value="315">
+Դալարիկ
+</option>
+<option value="316">
+Դաշտ
+</option>
+<option value="104">
+Դաշտադեմ
+</option>
+<option value="221">
+Դաշտավան
+</option>
+<option value="222">
+Դաշտաքար
+</option>
+<option value="777">
+Դաստակերտ
+</option>
+<option value="105">
+Դավթաշեն
+</option>
+<option value="778">
+Դավիթ Բեկ
+</option>
+<option value="223">
+Դարակերտ
+</option>
+<option value="395">
+Դարանակ
+</option>
+<option value="779">
+Դարբաս
+</option>
+<option value="224">
+Դարբնիկ
+</option>
+<option value="668">
+Դարիկ
+</option>
+<option value="492">
+Դարպաս
+</option>
+<option value="396">
+Դդմաշեն
+</option>
+<option value="106">
+Դդմասար
+</option>
+<option value="939">
+Դեբեդավան
+</option>
+<option value="493">
+Դեբետ
+</option>
+<option value="940">
+Դեղձավան
+</option>
+<option value="225">
+Դեղձուտ
+</option>
+<option value="107">
+Դիան
+</option>
+<option value="941">
+Դիլիջան
+</option>
+<option value="226">
+Դիմիտրով
+</option>
+<option value="227">
+Դիտակ
+</option>
+<option value="942">
+Դիտավան
+</option>
+<option value="780">
+Դիցմայրի
+</option>
+<option value="317">
+Դողս
+</option>
+<option value="943">
+Դովեղ
+</option>
+<option value="397">
+Դպրաբակ
+</option>
+<option value="108">
+Դպրևանք
+</option>
+<option value="494">
+Դսեղ
+</option>
+<option value="228">
+Դվին
+</option>
+<option value="398">
+Դրախտիկ
+</option>
+<option value="886">
+Ելփին
+</option>
+<option value="781">
+Եղեգ
+</option>
+<option value="887">
+Եղեգիս
+</option>
+<option value="888">
+Եղեգնաձոր
+</option>
+<option value="229">
+Եղեգնավան
+</option>
+<option value="318">
+Եղեգնուտ
+</option>
+<option value="109">
+Եղիպատրուշ
+</option>
+<option value="669">
+Եղնաջուր
+</option>
+<option value="110">
+Եղնիկ
+</option>
+<option value="593">
+Եղվարդ
+</option>
+<option value="944">
+Ենոքավան
+</option>
+<option value="670">
+Երազգավորս
+</option>
+<option value="399">
+Երանոս
+</option>
+<option value="230">
+Երասխ
+</option>
+<option value="319">
+Երասխահուն
+</option>
+<option value="671">
+Երիզակ
+</option>
+<option value="111">
+Երնջատափ
+</option>
+<option value="320">
+Երվանդաշատ
+</option>
+<option value="231">
+Զանգակատուն
+</option>
+<option value="594">
+Զառ
+</option>
+<option value="889">
+Զառիթափ
+</option>
+<option value="400">
+Զառիվեր
+</option>
+<option value="321">
+Զարթոնք
+</option>
+<option value="112">
+Զարինջա
+</option>
+<option value="672">
+Զարիշատ
+</option>
+<option value="890">
+Զեդեա
+</option>
+<option value="401">
+Զոլաքար
+</option>
+<option value="402">
+Զովաբեր
+</option>
+<option value="595">
+Զովաշեն
+</option>
+<option value="113">
+Զովասար
+</option>
+<option value="596">
+Զովունի
+</option>
+<option value="597">
+Զովք
+</option>
+<option value="232">
+Զորակ
+</option>
+<option value="945">
+Զորական
+</option>
+<option value="673">
+Զորակերտ
+</option>
+<option value="598">
+Զորավան
+</option>
+<option value="674">
+Զույգաղբյուր
+</option>
+<option value="979">
+Զվարթնոց օդանավակայան
+</option>
+<option value="114">
+Թաթուլ
+</option>
+<option value="322">
+Թաիրով
+</option>
+<option value="115">
+Թալին
+</option>
+<option value="782">
+Թանահատ
+</option>
+<option value="891">
+Թառաթումբ
+</option>
+<option value="783">
+Թասիկ
+</option>
+<option value="675">
+Թավշուտ
+</option>
+<option value="599">
+Թեղենիք
+</option>
+<option value="495">
+Թեղուտ
+</option>
+<option value="116">
+Թթուջուր
+</option>
+<option value="117">
+Թլիկ
+</option>
+<option value="784">
+Թխկուտ
+</option>
+<option value="676">
+Թորոս
+</option>
+<option value="496">
+Թումանյան
+</option>
+<option value="946">
+Իծաքար
+</option>
+<option value="785">
+Իշխանասար
+</option>
+<option value="947">
+Իջևան
+</option>
+<option value="677">
+Իսահակյան
+</option>
+<option value="118">
+Իրինդ
+</option>
+<option value="233">
+Լանջազատ
+</option>
+<option value="403">
+Լանջաղբյուր
+</option>
+<option value="234">
+Լանջանիստ
+</option>
+<option value="235">
+Լանջառ
+</option>
+<option value="678">
+Լանջիկ
+</option>
+<option value="323">
+Լենուղի
+</option>
+<option value="497">
+Լեջան
+</option>
+<option value="324">
+Լեռնագոգ
+</option>
+<option value="404">
+Լեռնակերտ
+</option>
+<option value="498">
+Լեռնահովիտ
+</option>
+<option value="786">
+Լեռնաձոր
+</option>
+<option value="325">
+Լեռնամերձ
+</option>
+<option value="600">
+Լեռնանիստ
+</option>
+<option value="499">
+Լեռնանցք
+</option>
+<option value="500">
+Լեռնապատ
+</option>
+<option value="119">
+Լեռնապար
+</option>
+<option value="501">
+Լեռնավան
+</option>
+<option value="120">
+Լեռնարոտ
+</option>
+<option value="679">
+Լեռնուտ
+</option>
+<option value="502">
+Լերմոնտովո
+</option>
+<option value="405">
+Լիճք
+</option>
+<option value="787">
+Լծեն
+</option>
+<option value="406">
+Լճաշեն
+</option>
+<option value="407">
+Լճավան
+</option>
+<option value="408">
+Լճափ
+</option>
+<option value="948">
+Լճկաձոր
+</option>
+<option value="503">
+Լոռի Բերդ
+</option>
+<option value="788">
+Լոր
+</option>
+<option value="680">
+Լորասար
+</option>
+<option value="504">
+Լորուտ
+</option>
+<option value="326">
+Լուկաշին
+</option>
+<option value="121">
+Լուսա
+</option>
+<option value="681">
+Լուսակերտ
+</option>
+<option value="122">
+Լուսակն
+</option>
+<option value="409">
+Լուսակունք
+</option>
+<option value="949">
+Լուսահովիտ
+</option>
+<option value="950">
+Լուսաձոր
+</option>
+<option value="505">
+Լուսաղբյուր
+</option>
+<option value="748">
+Լուսաղբյուր
+</option>
+<option value="236">
+Լուսաշող
+</option>
+<option value="237">
+Լուսառատ
+</option>
+<option value="327">
+Խանջյան
+</option>
+<option value="951">
+Խաշթառակ
+</option>
+<option value="410">
+Խաչաղբյուր
+</option>
+<option value="952">
+Խաչարձան
+</option>
+<option value="892">
+Խաչիկ
+</option>
+<option value="238">
+Խաչփառ
+</option>
+<option value="789">
+Խդրանց
+</option>
+<option value="790">
+Խնածախ
+</option>
+<option value="506">
+Խնկոյան
+</option>
+<option value="791">
+Խնձորեսկ
+</option>
+<option value="893">
+Խնձորուտ
+</option>
+<option value="123">
+Խնուսիկ
+</option>
+<option value="792">
+Խոզնավար
+</option>
+<option value="793">
+Խոտ
+</option>
+<option value="328">
+Խորոնք
+</option>
+<option value="507">
+Ծաթեր
+</option>
+<option value="411">
+Ծակքար
+</option>
+<option value="508">
+Ծաղկաբեր
+</option>
+<option value="329">
+Ծաղկալանջ
+</option>
+<option value="124">
+Ծաղկահովիտ
+</option>
+<option value="601">
+Ծաղկաձոր
+</option>
+<option value="509">
+Ծաղկաշատ
+</option>
+<option value="125">
+Ծաղկաշեն
+</option>
+<option value="126">
+Ծաղկասար
+</option>
+<option value="953">
+Ծաղկավան
+</option>
+<option value="330">
+Ծաղկունք
+</option>
+<option value="682">
+Ծաղկուտ
+</option>
+<option value="794">
+Ծավ
+</option>
+<option value="412">
+Ծափաթաղ
+</option>
+<option value="331">
+Ծիածան
+</option>
+<option value="127">
+Ծիլքար
+</option>
+<option value="795">
+Ծղուկ
+</option>
+<option value="413">
+Ծովա
+</option>
+<option value="414">
+Ծովազարդ
+</option>
+<option value="415">
+Ծովակ
+</option>
+<option value="416">
+Ծովասար
+</option>
+<option value="417">
+Ծովինար
+</option>
+<option value="128">
+Կաթնաղբյուր
+</option>
+<option value="510">
+Կաթնաջուր
+</option>
+<option value="511">
+Կաթնառատ
+</option>
+<option value="894">
+Կալասար
+</option>
+<option value="418">
+Կալավան
+</option>
+<option value="419">
+Կախակն
+</option>
+<option value="796">
+Կաղնուտ
+</option>
+<option value="512">
+Կաճաճկուտ
+</option>
+<option value="602">
+Կամարիս
+</option>
+<option value="683">
+Կամխուտ
+</option>
+<option value="684">
+Կամո
+</option>
+<option value="954">
+Կայան
+</option>
+<option value="129">
+Կայք
+</option>
+<option value="239">
+Կանաչուտ
+</option>
+<option value="130">
+Կանիաշիր
+</option>
+<option value="131">
+Կանչ
+</option>
+<option value="797">
+Կապան
+</option>
+<option value="895">
+Կապույտ
+</option>
+<option value="603">
+Կապուտան
+</option>
+<option value="685">
+Կապս
+</option>
+<option value="686">
+Կառնուտ
+</option>
+<option value="798">
+Կավճուտ
+</option>
+<option value="132">
+Կարբի
+</option>
+<option value="799">
+Կարդ
+</option>
+<option value="604">
+Կարենիս
+</option>
+<option value="133">
+Կարին
+</option>
+<option value="420">
+Կարճաղբյուր
+</option>
+<option value="800">
+Կարճևան
+</option>
+<option value="421">
+Կարմիր
+</option>
+<option value="513">
+Կարմիր Աղեկ
+</option>
+<option value="687">
+Կարմրավան
+</option>
+<option value="688">
+Կարմրաքար
+</option>
+<option value="240">
+Կաքավաբերդ
+</option>
+<option value="134">
+Կաքավաձոր
+</option>
+<option value="689">
+Կաքավասար
+</option>
+<option value="896">
+Կեչուտ
+</option>
+<option value="955">
+Կիրանց
+</option>
+<option value="801">
+Կիցք
+</option>
+<option value="956">
+Կոթի
+</option>
+<option value="957">
+Կողբ
+</option>
+<option value="332">
+Կողբավան
+</option>
+<option value="514">
+Կողես
+</option>
+<option value="135">
+Կոշ
+</option>
+<option value="802">
+Կոռնիձոր
+</option>
+<option value="605">
+Կոտայք
+</option>
+<option value="422">
+Կութ
+</option>
+<option value="423">
+Կուտական
+</option>
+<option value="515">
+Կուրթան
+</option>
+<option value="803">
+Կուրիս
+</option>
+<option value="690">
+Կրաշեն
+</option>
+<option value="691">
+Կրասար
+</option>
+<option value="516">
+Կրուգլայա շիշկա
+</option>
+<option value="517">
+Հագվի
+</option>
+<option value="518">
+Հալավար
+</option>
+<option value="804">
+Հալիձոր
+</option>
+<option value="136">
+Հակո
+</option>
+<option value="958">
+Հաղարծին
+</option>
+<option value="959">
+Հաղթանակ
+</option>
+<option value="519">
+Հաղպատ
+</option>
+<option value="241">
+Հայանիստ
+</option>
+<option value="333">
+Հայթաղ
+</option>
+<option value="692">
+Հայկաձոր
+</option>
+<option value="334">
+Հայկաշեն
+</option>
+<option value="693">
+Հայկասար
+</option>
+<option value="335">
+Հայկավան
+</option>
+<option value="424">
+Հայրավանք
+</option>
+<option value="694">
+Հայրենյաց
+</option>
+<option value="606">
+Հանքավան
+</option>
+<option value="695">
+Հառիճ
+</option>
+<option value="607">
+Հատիս
+</option>
+<option value="696">
+Հարթաշեն
+</option>
+<option value="137">
+Հարթավան
+</option>
+<option value="805">
+Հարժիս
+</option>
+<option value="138">
+Հացաշեն
+</option>
+<option value="608">
+Հացավան
+</option>
+<option value="336">
+Հացիկ
+</option>
+<option value="697">
+Հացիկավան
+</option>
+<option value="897">
+Հերհեր&nbsp;&nbsp;
+</option>
+<option value="898">
+Հերմոն
+</option>
+<option value="139">
+Հնաբերդ
+</option>
+<option value="520">
+Հոբարձի
+</option>
+<option value="698">
+Հողմիկ
+</option>
+<option value="699">
+Հոռոմ
+</option>
+<option value="700">
+Հովիտ
+</option>
+<option value="521">
+Հովնանաձոր
+</option>
+<option value="701">
+Հովունի
+</option>
+<option value="337">
+Հովտամեջ
+</option>
+<option value="242">
+Հովտաշատ
+</option>
+<option value="243">
+Հովտաշեն
+</option>
+<option value="702">
+Հովտուն
+</option>
+<option value="960">
+Հովք
+</option>
+<option value="899">
+Հորբատեղ
+</option>
+<option value="900">
+Հորս
+</option>
+<option value="338">
+Հուշակերտ
+</option>
+<option value="609">
+Հրազդան
+</option>
+<option value="703">
+Ձիթհանքով
+</option>
+<option value="522">
+Ձյունաշող
+</option>
+<option value="425">
+Ձորա
+</option>
+<option value="523">
+Ձորագետ
+</option>
+<option value="140">
+Ձորագլուխ
+</option>
+<option value="806">
+Ձորակ
+</option>
+<option value="704">
+Ձորակապ
+</option>
+<option value="610">
+Ձորաղբյուր
+</option>
+<option value="524">
+Ձորամուտ
+</option>
+<option value="705">
+Ձորաշեն
+</option>
+<option value="807">
+Ձորաստան
+</option>
+<option value="426">
+Ձորավանք
+</option>
+<option value="706">
+Ղազանչի
+</option>
+<option value="141">
+Ղազարավան
+</option>
+<option value="707">
+Ղարիբջանյան
+</option>
+<option value="244">
+Ղուկասավան
+</option>
+<option value="525">
+Ղուրսալ
+</option>
+<option value="808">
+Ճակատեն
+</option>
+<option value="427">
+Ճամբարակ
+</option>
+<option value="428">
+Ճապկուտ
+</option>
+<option value="142">
+Ճարճակիս
+</option>
+<option value="526">
+Ճոճկան
+</option>
+<option value="429">
+Մադինա
+</option>
+<option value="901">
+Մալիշկա
+</option>
+<option value="611">
+Մայակովսկի
+</option>
+<option value="339">
+Մայիսյան
+</option>
+<option value="245">
+Մասիս
+</option>
+<option value="143">
+Մաստարա
+</option>
+<option value="708">
+Մարալիկ
+</option>
+<option value="527">
+Մարգահովիտ
+</option>
+<option value="340">
+Մարգարա
+</option>
+<option value="709">
+Մարմաշեն
+</option>
+<option value="246">
+Մարմարաշեն
+</option>
+<option value="612">
+Մարմարիկ
+</option>
+<option value="902">
+Մարտիրոս
+</option>
+<option value="430">
+Մարտունի
+</option>
+<option value="528">
+Մարց
+</option>
+<option value="431">
+Մաքենիս
+</option>
+<option value="529">
+Մեդովկա
+</option>
+<option value="144">
+Մելիք
+</option>
+<option value="530">
+Մեծ Այրում
+</option>
+<option value="710">
+Մեծ Մանթաշ
+</option>
+<option value="432">
+Մեծ Մասրիկ
+</option>
+<option value="531">
+Մեծ Պարնի
+</option>
+<option value="711">
+Մեծ Սարիար
+</option>
+<option value="712">
+Մեծ Սեպասար
+</option>
+<option value="145">
+Մեծաձոր
+</option>
+<option value="341">
+Մեծամոր
+</option>
+<option value="532">
+Մեծավան
+</option>
+<option value="533">
+Մեղվահովիտ
+</option>
+<option value="613">
+Մեղրաձոր
+</option>
+<option value="713">
+Մեղրաշատ
+</option>
+<option value="714">
+Մեղրաշեն
+</option>
+<option value="809">
+Մեղրի
+</option>
+<option value="342">
+Մերձավան
+</option>
+<option value="534">
+Միխայելովկա
+</option>
+<option value="146">
+Միջնատուն
+</option>
+<option value="147">
+Միրաք
+</option>
+<option value="247">
+Մխչյան
+</option>
+<option value="535">
+Մղարթ
+</option>
+<option value="343">
+Մյասնիկյան
+</option>
+<option value="903">
+Մոզրով
+</option>
+<option value="961">
+Մովսեսգյուղ
+</option>
+<option value="148">
+Մուղնի
+</option>
+<option value="344">
+Մուսալեռ
+</option>
+<option value="810">
+Մուսալլամ
+</option>
+<option value="715">
+Մուսայելյան
+</option>
+<option value="811">
+Մուցք
+</option>
+<option value="248">
+Մրգանուշ
+</option>
+<option value="345">
+Մրգաշատ
+</option>
+<option value="614">
+Մրգաշեն
+</option>
+<option value="346">
+Մրգաստան
+</option>
+<option value="249">
+Մրգավան
+</option>
+<option value="250">
+Մրգավետ
+</option>
+<option value="536">
+Յաղդան
+</option>
+<option value="347">
+Նալբանդյան
+</option>
+<option value="716">
+Նահապետավան
+</option>
+<option value="962">
+Նավուր
+</option>
+<option value="251">
+Նարեկ
+</option>
+<option value="537">
+Նեղոց
+</option>
+<option value="149">
+Ներքին Բազմաբերդ
+</option>
+<option value="433">
+Ներքին Գետաշեն
+</option>
+<option value="812">
+Ներքին Գիրաթաղ&nbsp;
+</option>
+<option value="813">
+Ներքին Խնձորեսկ
+</option>
+<option value="814">
+Ներքին Խոտանան
+</option>
+<option value="963">
+Ներքին Կարմիրաղբյուր
+</option>
+<option value="815">
+Ներքին Հանդ
+</option>
+<option value="434">
+Ներքին Շորժա
+</option>
+<option value="150">
+Ներքին Սասնաշեն
+</option>
+<option value="816">
+Նժդեհ
+</option>
+<option value="151">
+Նիգավան
+</option>
+<option value="152">
+Նիգատուն
+</option>
+<option value="252">
+Նիզամի
+</option>
+<option value="253">
+Նշավան
+</option>
+<option value="435">
+Նշխարք
+</option>
+<option value="254">
+Նոյակերտ
+</option>
+<option value="964">
+Նոյեմբերյան
+</option>
+<option value="538">
+Նովոսելցովո
+</option>
+<option value="619">
+Նոր
+</option>
+<option value="904">
+Նոր Ազնաբերդ
+</option>
+<option value="153">
+Նոր Ամանոս
+</option>
+<option value="817">
+Նոր Աստղաբերդ
+</option>
+<option value="154">
+Նոր Արթիկ
+</option>
+<option value="348">
+Նոր Արմավիր
+</option>
+<option value="349">
+Նոր Արտագերս
+</option>
+<option value="615">
+Նոր Արտամետ
+</option>
+<option value="616">
+Նոր Գեղի
+</option>
+<option value="155">
+Նոր Եդեսիա
+</option>
+<option value="617">
+Նոր Երզնկա
+</option>
+<option value="539">
+Նոր Խաչակապ
+</option>
+<option value="255">
+Նոր Խարբերդ
+</option>
+<option value="350">
+Նոր Կեսարիա
+</option>
+<option value="256">
+Նոր Կյուրին
+</option>
+<option value="618">
+Նոր Հաճն
+</option>
+<option value="436">
+Նորաբակ
+</option>
+<option value="72">
+Նորագավիթ
+</option>
+<option value="351">
+Նորակերտ
+</option>
+<option value="259">
+Նորամարգ
+</option>
+<option value="540">
+Նորամուտ
+</option>
+<option value="156">
+Նորաշեն
+</option>
+<option value="818">
+Նորաշենիկ
+</option>
+<option value="352">
+Նորապատ
+</option>
+<option value="353">
+Նորավան
+</option>
+<option value="437">
+Նորատուս
+</option>
+<option value="257">
+Նոր կյանք
+</option>
+<option value="717">
+Նորշեն
+</option>
+<option value="258">
+Նոր ուղի
+</option>
+<option value="73">
+Նուբարաշեն
+</option>
+<option value="620">
+Նուռնուս
+</option>
+<option value="819">
+Նռնաձոր
+</option>
+<option value="260">
+Շահումյան
+</option>
+<option value="354">
+Շահումյանի թռչնաֆաբրիկա
+</option>
+<option value="820">
+Շաղատ
+</option>
+<option value="261">
+Շաղափ
+</option>
+<option value="718">
+Շաղիկ
+</option>
+<option value="821">
+Շամբ
+</option>
+<option value="157">
+Շամիրամ
+</option>
+<option value="541">
+Շամլուղ
+</option>
+<option value="542">
+Շամուտ
+</option>
+<option value="905">
+Շատին
+</option>
+<option value="438">
+Շատջրեք
+</option>
+<option value="439">
+Շատվան
+</option>
+<option value="822">
+Շաքի
+</option>
+<option value="823">
+Շենաթաղ
+</option>
+<option value="158">
+Շենավան
+</option>
+<option value="355">
+Շենիկ
+</option>
+<option value="159">
+Շենկանի
+</option>
+<option value="824">
+Շիկահող
+</option>
+<option value="825">
+Շինուհայր
+</option>
+<option value="826">
+Շիշկերտ
+</option>
+<option value="719">
+Շիրակ
+</option>
+<option value="543">
+Շիրակամուտ
+</option>
+<option value="720">
+Շիրակավան
+</option>
+<option value="160">
+Շղարշիկ
+</option>
+<option value="544">
+Շնող
+</option>
+<option value="161">
+Շողակն
+</option>
+<option value="440">
+Շորժա
+</option>
+<option value="827">
+Շուռնուխ
+</option>
+<option value="828">
+Շվանիձոր
+</option>
+<option value="829">
+Շրվենանց
+</option>
+<option value="621">
+Ողջաբերդ
+</option>
+<option value="721">
+Ողջի
+</option>
+<option value="830">
+Ոչեթի
+</option>
+<option value="162">
+Ոսկեթաս
+</option>
+<option value="722">
+Ոսկեհասկ
+</option>
+<option value="163">
+Ոսկեհատ
+</option>
+<option value="965">
+Ոսկեպար
+</option>
+<option value="164">
+Ոսկեվազ
+</option>
+<option value="966">
+Ոսկեվան
+</option>
+<option value="262">
+Ոսկետափ
+</option>
+<option value="263">
+Ոստան
+</option>
+<option value="831">
+Որոտան
+</option>
+<option value="832">
+Ուժանիս
+</option>
+<option value="906">
+Ուղեձոր
+</option>
+<option value="833">
+Ույծ
+</option>
+<option value="165">
+Ուշի
+</option>
+<option value="166">
+Ուջան
+</option>
+<option value="545">
+Ուռուտ
+</option>
+<option value="546">
+Ուրասար
+</option>
+<option value="264">
+Ուրցալանջ
+</option>
+<option value="265">
+Ուրցաձոր
+</option>
+<option value="622">
+Չարենցավան
+</option>
+<option value="834">
+Չափնի
+</option>
+<option value="967">
+Չինարի
+</option>
+<option value="968">
+Չինչին
+</option>
+<option value="907">
+Չիվա
+</option>
+<option value="547">
+Չկալով
+</option>
+<option value="441">
+Չկալովկա
+</option>
+<option value="969">
+Չորաթան
+</option>
+<option value="167">
+Չքնաղ
+</option>
+<option value="723">
+Պաղակն
+</option>
+<option value="548">
+Պաղաղբյուր
+</option>
+<option value="970">
+Պառավաքար
+</option>
+<option value="266">
+Պարույր Սևակ
+</option>
+<option value="168">
+Պարտիզակ
+</option>
+<option value="724">
+Պեմզաշեն
+</option>
+<option value="549">
+Պետրովկա
+</option>
+<option value="550">
+Պուշկինո
+</option>
+<option value="623">
+Պռոշյան
+</option>
+<option value="971">
+Պտղավան
+</option>
+<option value="624">
+Պտղնի
+</option>
+<option value="356">
+Պտղունք
+</option>
+<option value="551">
+Պրիվոլնոյե
+</option>
+<option value="442">
+Ջաղացաձոր
+</option>
+<option value="169">
+Ջամշլու
+</option>
+<option value="357">
+Ջանֆիդա
+</option>
+<option value="725">
+Ջաջուռ
+</option>
+<option value="726">
+Ջաջուռավան
+</option>
+<option value="908">
+Ջերմուկ
+</option>
+<option value="443">
+Ջիլ
+</option>
+<option value="552">
+Ջիլիզա
+</option>
+<option value="972">
+Ջուջևան
+</option>
+<option value="625">
+Ջրաբեր
+</option>
+<option value="267">
+Ջրահովիտ
+</option>
+<option value="727">
+Ջրաձոր
+</option>
+<option value="170">
+Ջրամբար
+</option>
+<option value="268">
+Ջրաշեն
+</option>
+<option value="358">
+Ջրառատ
+</option>
+<option value="359">
+Ջրարբի
+</option>
+<option value="728">
+Ջրափի
+</option>
+<option value="626">
+Ջրվեժ
+</option>
+<option value="269">
+Ռանչպար
+</option>
+<option value="909">
+Ռինդ
+</option>
+<option value="171">
+Ռյա թազա
+</option>
+<option value="172">
+Սադունց
+</option>
+<option value="910">
+Սալլի
+</option>
+<option value="729">
+Սալուտ
+</option>
+<option value="835">
+Սալվարդ
+</option>
+<option value="173">
+Սաղմոսավան
+</option>
+<option value="270">
+Սայաթ-Նովա
+</option>
+<option value="836">
+Սառնակունք
+</option>
+<option value="730">
+Սառնաղբյուր
+</option>
+<option value="174">
+Սասունիկ
+</option>
+<option value="731">
+Սարա
+</option>
+<option value="175">
+Սարալանջ
+</option>
+<option value="732">
+Սարակապ
+</option>
+<option value="553">
+Սարահարթ
+</option>
+<option value="554">
+Սարամեջ
+</option>
+<option value="733">
+Սարապատ
+</option>
+<option value="911">
+Սարավան
+</option>
+<option value="734">
+Սարատակ
+</option>
+<option value="555">
+Սարատովկա
+</option>
+<option value="360">
+Սարդարապատ
+</option>
+<option value="973">
+Սարի
+</option>
+<option value="444">
+Սարուխան
+</option>
+<option value="556">
+Սարչապետ
+</option>
+<option value="445">
+Սեմյոնովկա
+</option>
+<option value="912">
+Սերս
+</option>
+<option value="837">
+Սզնակ
+</option>
+<option value="735">
+Սիզավետ
+</option>
+<option value="271">
+Սիս
+</option>
+<option value="272">
+Սիսավան
+</option>
+<option value="838">
+Սիսիան
+</option>
+<option value="176">
+Սիփան
+</option>
+<option value="273">
+Սիփանիկ
+</option>
+<option value="839">
+Սյունիք
+</option>
+<option value="446">
+Սոթք
+</option>
+<option value="627">
+Սոլակ
+</option>
+<option value="177">
+Սորիկ
+</option>
+<option value="178">
+Սուսեր
+</option>
+<option value="274">
+Սուրենավան
+</option>
+<option value="736">
+Սպանդարյան
+</option>
+<option value="557">
+Սպիտակ
+</option>
+<option value="840">
+Սվարանց
+</option>
+<option value="558">
+Սվերդլով
+</option>
+<option value="74">
+Ստեփանակերտ
+</option>
+<option value="559">
+Ստեփանավան
+</option>
+<option value="841">
+Սրաշեն
+</option>
+<option value="628">
+Սևաբերդ
+</option>
+<option value="913">
+Սևաժայռ
+</option>
+<option value="447">
+Սևան
+</option>
+<option value="842">
+Սևաքար
+</option>
+<option value="974">
+Սևքար
+</option>
+<option value="975">
+Վազաշեն
+</option>
+<option value="560">
+Վահագնաձոր
+</option>
+<option value="561">
+Վահագնի
+</option>
+<option value="75">
+Վահագնի թաղամաս
+</option>
+<option value="448">
+Վահան
+</option>
+<option value="737">
+Վահրամաբերդ
+</option>
+<option value="843">
+Վահրավար
+</option>
+<option value="449">
+Վաղաշեն
+</option>
+<option value="844">
+Վաղատին
+</option>
+<option value="845">
+Վաղատուր
+</option>
+<option value="361">
+Վաղարշապատ (Էջմիածին)
+</option>
+<option value="914">
+Վայք
+</option>
+<option value="562">
+Վանաձոր
+</option>
+<option value="362">
+Վանանդ
+</option>
+<option value="275">
+Վանաշեն
+</option>
+<option value="846">
+Վանեք
+</option>
+<option value="450">
+Վանևան
+</option>
+<option value="976">
+Վարագավան
+</option>
+<option value="563">
+Վարդաբլուր
+</option>
+<option value="915">
+Վարդահովիտ
+</option>
+<option value="451">
+Վարդաձոր
+</option>
+<option value="738">
+Վարդաղբյուր
+</option>
+<option value="363">
+Վարդանաշեն
+</option>
+<option value="847">
+Վարդանիձոր
+</option>
+<option value="276">
+Վարդաշատ
+</option>
+<option value="277">
+Վարդաշեն
+</option>
+<option value="848">
+Վարդավանք
+</option>
+<option value="739">
+Վարդաքար
+</option>
+<option value="452">
+Վարդենիկ
+</option>
+<option value="453">
+Վարդենիս
+</option>
+<option value="179">
+Վարդենուտ
+</option>
+<option value="454">
+Վարսեր
+</option>
+<option value="278">
+Վեդի
+</option>
+<option value="279">
+Վերին Արտաշատ
+</option>
+<option value="180">
+Վերին Բազմաբերդ
+</option>
+<option value="849">
+Վերին Գեղավանք
+</option>
+<option value="455">
+Վերին Գետաշեն
+</option>
+<option value="850">
+Վերին Գիրաթաղ&nbsp;
+</option>
+<option value="280">
+Վերին Դվին
+</option>
+<option value="851">
+Վերին Խոտանան
+</option>
+<option value="977">
+Վերին Կարմիրաղբյուր
+</option>
+<option value="456">
+Վերին Շորժա
+</option>
+<option value="629">
+Վերին Պտղնի
+</option>
+<option value="181">
+Վերին Սասնաշեն
+</option>
+<option value="182">
+Վերին Սասունիկ
+</option>
+<option value="852">
+Վերիշեն
+</option>
+<option value="916">
+Վերնաշեն
+</option>
+<option value="853">
+Տաթև
+</option>
+<option value="364">
+Տալվորիկ
+</option>
+<option value="854">
+Տանձավեր
+</option>
+<option value="855">
+Տանձատափ
+</option>
+<option value="365">
+Տանձուտ
+</option>
+<option value="564">
+Տաշիր
+</option>
+<option value="856">
+Տաշտուն
+</option>
+<option value="978">
+Տավուշ
+</option>
+<option value="857">
+Տավրուս
+</option>
+<option value="366">
+Տարոնիկ
+</option>
+<option value="281">
+Տափերական
+</option>
+<option value="858">
+Տեղ
+</option>
+<option value="183">
+Տեղեր
+</option>
+<option value="282">
+Տիգրանաշեն
+</option>
+<option value="859">
+Տոլորս
+</option>
+<option value="860">
+Տորունիք
+</option>
+<option value="457">
+Տորֆավան
+</option>
+<option value="740">
+Տուֆաշեն
+</option>
+<option value="458">
+Տրետուք
+</option>
+<option value="184">
+Ցամաքասար
+</option>
+<option value="861">
+Ցղունի
+</option>
+<option value="741">
+Ցողամարգ
+</option>
+<option value="459">
+Փամբակ
+</option>
+<option value="565">
+Փամբակ
+</option>
+<option value="742">
+Փանիկ
+</option>
+<option value="367">
+Փարաքար
+</option>
+<option value="185">
+Փարպի
+</option>
+<option value="630">
+Փյունիկ
+</option>
+<option value="368">
+Փշատավան
+</option>
+<option value="917">
+Փոռ
+</option>
+<option value="566">
+Փոքր Այրում
+</option>
+<option value="743">
+Փոքր Մանթաշ
+</option>
+<option value="460">
+Փոքր Մասրիկ
+</option>
+<option value="744">
+Փոքր Սարիար
+</option>
+<option value="745">
+Փոքր Սեպասար
+</option>
+<option value="283">
+Փոքր Վեդի
+</option>
+<option value="746">
+Փոքրաշեն
+</option>
+<option value="631">
+Քաղսի
+</option>
+<option value="284">
+Քաղցրաշեն
+</option>
+<option value="632">
+Քանաքեռավան
+</option>
+<option value="862">
+Քաշունի
+</option>
+<option value="863">
+Քաջարան
+</option>
+<option value="633">
+Քասախ
+</option>
+<option value="567">
+Քարաբերդ
+</option>
+<option value="918">
+Քարագլուխ
+</option>
+<option value="369">
+Քարակերտ
+</option>
+<option value="864">
+Քարահունջ
+</option>
+<option value="568">
+Քարաձոր
+</option>
+<option value="634">
+Քարաշամբ
+</option>
+<option value="865">
+Քարաշեն
+</option>
+<option value="569">
+Քարինջ
+</option>
+<option value="570">
+Քարկոփ
+</option>
+<option value="866">
+Քարուտ
+</option>
+<option value="747">
+Քեթի
+</option>
+<option value="186">
+Քուչակ
+</option>
+<option value="187">
+Օթևան
+</option>
+<option value="867">
+Օխտար
+</option>
+<option value="188">
+Օհանավան
+</option>
+<option value="571">
+Օձուն
+</option>
+<option value="189">
+Օշական
+</option>
+<option value="190">
+Օրգով
+</option>
+<option value="635">
+Ֆանտան
+</option>
+<option value="370">
+Ֆերիկ
+</option>
+<option value="572">
+Ֆիոլետովո
+</option>
+</select><div class="chosen-container chosen-container-single" title=""><a class="chosen-single">
+  <span>Քաղաք</span>
+  <div><b></b></div>
+</a>
+<div class="chosen-drop">
+  <div class="chosen-search">
+    <input class="chosen-search-input" type="text" autocomplete="off">
+  </div>
+  <ul class="chosen-results"></ul>
+</div></div>
+</div>
+</div>
+<div class="register--zip-city">
+<div class="register-zip is--hidden">
+<input autocomplete="section-billing billing postal-code" name="register[billing][zipcode]" type="number" required="required" aria-required="true" placeholder="Փոստային ինդեքս*" id="zipcode" value="0054" class="register--field register--field-zipcode is--required">
+</div>
+<div class="register-city is--hidden">
+<input autocomplete="section-billing billing address-level2" name="register[billing][city]" type="hidden" required="required" aria-required="true" placeholder="Քաղաքը*" id="city" value="" size="25" class="register--field register--spacer register--field-city is--required">
+</div>
+</div>
+<div class="register--street">
+<input autocomplete="section-billing billing street-address" name="register[billing][street]" type="text" id="street" required="required" aria-required="true" placeholder="Հասցե*" value="" class="register--field register--field-street is--required ">
+</div>
+</div>
+</div>
+<div class="panel register--shipping is--hidden">
+<h2 class="panel--title is--underline">
+Your alternative shipping address
+</h2>
+<div class="panel--body is--wide">
+<div class="register--salutation field--select select-field">
+<select name="register[shipping][salutation]" id="salutation2" class="normal is--required">
+<option value="" disabled="disabled" selected="selected">Ողջունում*</option>
+<option value="Պրն">Պրն</option>
+<option value="Տկն">Տկն</option>
+<option value="Միսս">Միսս</option>
+<option value="Հարգելի">Հարգելի</option>
+<option value="Mr">Mr</option>
+<option value="Mrs">Mrs</option>
+<option value="Miss">Miss</option>
+<option value="Мистер">Мистер</option>
+<option value="Мисс">Мисс</option>
+<option value="Миссис">Миссис</option>
+</select>
+</div>
+<div class="register--companyname">
+<input autocomplete="section-shipping shipping organization" name="register[shipping][company]" type="text" placeholder="Company" id="company2" value="" class="register--field">
+</div>
+<div class="register--department">
+<input autocomplete="section-shipping shipping organization-title" name="register[shipping][department]" type="text" placeholder="Department" id="department2" value="" class="register--field ">
+</div>
+<div class="register--firstname">
+<input autocomplete="section-shipping shipping given-name" name="register[shipping][firstname]" type="text" aria-required="true" placeholder="Անուն*" id="firstname2" value="" class="register--field is--required">
+</div>
+<div class="register--lastname">
+<input autocomplete="section-shipping shipping family-name" name="register[shipping][lastname]" type="text" aria-required="true" placeholder="Ազգանուն*" id="lastname2" value="" class="register--field is--required">
+</div>
+<div class="register--street">
+<input autocomplete="section-shipping shipping street-address" name="register[shipping][street]" type="text" aria-required="true" placeholder="Street and number*" id="street2" value="" class="register--field register--field-street is--required">
+</div>
+<div class="register--zip-city">
+<input autocomplete="section-shipping shipping postal-code" name="register[shipping][zipcode]" type="text" aria-required="true" placeholder="Փոստային ինդեքս*" id="zipcode2" value="" class="register--field register--spacer register--field-zipcode is--required">
+<input autocomplete="section-shipping shipping address-level2" name="register[shipping][city]" type="text" aria-required="true" placeholder="Քաղաք*" id="city2" value="" size="25" class="register--field register--field-city is--required">
+</div>
+<div class="register--shipping-country field--select select-field">
+<select name="register[shipping][country]" data-address-type="shipping" id="country_shipping" aria-required="true" class="select--country is--required">
+<option value="" disabled="disabled" selected="selected">
+Country*
+</option>
+<option value="57">
+Armenia
+</option>
+</select>
+</div>
+<div class="country-area-state-selection">
+<div data-country-id="57" data-address-type="shipping" class="register--state-selection field--select select-field is--hidden">
+<select name="register[shipping][country_shipping_state_57]" disabled="disabled" class="select--state ">
+<option value="" selected="selected">Քաղաք</option>
+<option value="70">Երևան</option>
+<option value="191">Աբովյան</option>
+<option value="76">Ագարակ</option>
+<option value="868">Ագարակաձոր</option>
+<option value="77">Ագարակավան</option>
+<option value="371">Ազատ</option>
+<option value="919">Ազատամուտ</option>
+<option value="636">Ազատան</option>
+<option value="192">Ազատաշեն</option>
+<option value="193">Ազատավան</option>
+<option value="869">Ազատեկ</option>
+<option value="461">Ազնվաձոր</option>
+<option value="462">Աթան</option>
+<option value="78">Ալագյազ</option>
+<option value="285">Ալաշկերտ</option>
+<option value="463">Ալավերդի</option>
+<option value="573">Ալափարս</option>
+<option value="749">Ալվանք</option>
+<option value="637">Ալվար</option>
+<option value="464">Ախթալա</option>
+<option value="750">Ախլաթյան</option>
+<option value="638">Ախուրիկ</option>
+<option value="640">Ախուրյան</option>
+<option value="639">Ախուրյանի կայարան</option>
+<option value="372">Ախպրաձոր</option>
+<option value="870">Ախտա</option>
+<option value="286">Ակնալիճ</option>
+<option value="920">Ակնաղբյուր</option>
+<option value="287">Ակնաշեն</option>
+<option value="465">Ակներ</option>
+<option value="79">Ակունք</option>
+<option value="466">Ահնիձոր</option>
+<option value="574">Աղավնաձոր</option>
+<option value="921">Աղավնավանք</option>
+<option value="288">Աղավնատուն</option>
+<option value="373">Աղբերք</option>
+<option value="641">Աղին</option>
+<option value="751">Աղիտու</option>
+<option value="80">Աղձք</option>
+<option value="871">Աղնջաձոր</option>
+<option value="752">Աղվանի</option>
+<option value="642">Աղվորիկ</option>
+<option value="753">Աճանան</option>
+<option value="922">Աճարկուտ</option>
+<option value="872">Ամաղու</option>
+<option value="289">Ամասիա</option>
+<option value="290">Ամբերդ</option>
+<option value="467">Ամոջ</option>
+<option value="468">Ամրակից</option>
+<option value="643">Այգաբաց</option>
+<option value="194">Այգավան</option>
+<option value="195">Այգեզարդ</option>
+<option value="291">Այգեկ</option>
+<option value="469">Այգեհատ</option>
+<option value="923">Այգեհովիտ</option>
+<option value="754">Այգեձոր</option>
+<option value="292">Այգեշատ</option>
+<option value="196">Այգեպատ</option>
+<option value="924">Այգեպար</option>
+<option value="197">Այգեստան</option>
+<option value="293">Այգեվան</option>
+<option value="374">Այգուտ</option>
+<option value="198">Այնթապ</option>
+<option value="925">Այրում</option>
+<option value="375">Այրք</option>
+<option value="755">Անգեղակոթ</option>
+<option value="644">Անիավան</option>
+<option value="645">Անիպեմզա</option>
+<option value="646">Անուշավան</option>
+<option value="376">Անտառամեջ</option>
+<option value="470">Անտառամուտ</option>
+<option value="756">Անտառաշատ</option>
+<option value="471">Անտառաշեն</option>
+<option value="81">Անտառուտ</option>
+<option value="82">Աշնակ</option>
+<option value="757">Աշոտավան</option>
+<option value="647">Աշոցք</option>
+<option value="83">Աշտարակ</option>
+<option value="926">Աչաջուր</option>
+<option value="294">Ապագա</option>
+<option value="472">Ապավեն</option>
+<option value="84">Ապարան</option>
+<option value="758">Աջաբաջ</option>
+<option value="759">Առաջաձոր</option>
+<option value="295">Առատաշեն</option>
+<option value="648">Առափի</option>
+<option value="575">Առինջ</option>
+<option value="377">Աստղաձոր</option>
+<option value="378">Ավազան</option>
+<option value="85">Ավան</option>
+<option value="199">Ավշար</option>
+<option value="86">Ավշեն</option>
+<option value="576">Արա</option>
+<option value="87">Արագած</option>
+<option value="88">Արագածավան</option>
+<option value="89">Արագածոտն</option>
+<option value="296">Արազափ</option>
+<option value="200">Արալեզ</option>
+<option value="577">Արամուս</option>
+<option value="90">Արայի</option>
+<option value="649">Արավետ</option>
+<option value="760">Արավուս</option>
+<option value="873">Արատես</option>
+<option value="201">Արարատ</option>
+<option value="297">Արաքս</option>
+<option value="202">Արաքսավան</option>
+<option value="203">Արբաթ</option>
+<option value="204">Արգավանդ</option>
+<option value="71">Արգավանդ</option>
+<option value="578">Արգել</option>
+<option value="298">Արգինա</option>
+<option value="650">Արդենիս</option>
+<option value="473">Արդվի</option>
+<option value="651">Արեգնադեմ</option>
+<option value="379">Արեգունի</option>
+<option value="874">Արենի</option>
+<option value="579">Արզական</option>
+<option value="580">Արզնի</option>
+<option value="652">Արթիկ</option>
+<option value="875">Արին</option>
+<option value="474">Արծնի</option>
+<option value="927">Արծվաբերդ</option>
+<option value="761">Արծվանիկ</option>
+<option value="380">Արծվանիստ</option>
+<option value="928">Արճիս</option>
+<option value="475">Արմանիս</option>
+<option value="205">Արմաշ</option>
+<option value="300">Արմավիր</option>
+<option value="299">Արմավիր (Հոկտեմբերյան)</option>
+<option value="301">Արշալույս</option>
+<option value="91">Արուճ</option>
+<option value="476">Արջուտ</option>
+<option value="876">Արտաբույնք</option>
+<option value="302">Արտամետ</option>
+<option value="381">Արտանիշ</option>
+<option value="92">Արտաշավան</option>
+<option value="206">Արտաշատ</option>
+<option value="303">Արտաշար</option>
+<option value="581">Արտավազ</option>
+<option value="877">Արտավան</option>
+<option value="93">Արտենի</option>
+<option value="304">Արտիմետ</option>
+<option value="653">Արփենի</option>
+<option value="878">Արփի</option>
+<option value="382">Արփունք</option>
+<option value="207">Արևաբույր</option>
+<option value="305">Արևադաշտ</option>
+<option value="477">Արևածագ</option>
+<option value="306">Արևաշատ</option>
+<option value="478">Արևաշող</option>
+<option value="307">Արևիկ</option>
+<option value="762">Արևիս</option>
+<option value="208">Արևշատ</option>
+<option value="94">Արևուտ</option>
+<option value="95">Ափնա</option>
+<option value="479">Աքորի</option>
+<option value="308">Բագարան</option>
+<option value="654">Բագրավան</option>
+<option value="929">Բագրատաշեն</option>
+<option value="96">Բազմաղբյուր</option>
+<option value="480">Բազում</option>
+<option value="582">Բալահովիտ</option>
+<option value="763">Բալաք</option>
+<option value="930">Բաղանիս</option>
+<option value="209">Բաղրամյան</option>
+<option value="309">Բամբակաշատ</option>
+<option value="655">Բայանդուր</option>
+<option value="656">Բանդիվան</option>
+<option value="657">Բասեն</option>
+<option value="658">Բավրա</option>
+<option value="764">Բարգուշատ</option>
+<option value="931">Բարեկամավան</option>
+<option value="383">Բարեպատ</option>
+<option value="210">Բարձրաշեն</option>
+<option value="765">Բարձրավան</option>
+<option value="879">Բարձրունի</option>
+<option value="481">Բենդիկ</option>
+<option value="659">Բենիամին</option>
+<option value="932">Բերդ</option>
+<option value="660">Բերդաշեն</option>
+<option value="933">Բերդավան</option>
+<option value="211">Բերդիկ</option>
+<option value="384">Բերդկունք</option>
+<option value="934">Բերքաբեր</option>
+<option value="212">Բերքանուշ</option>
+<option value="310">Բերքաշատ</option>
+<option value="97">Բերքառատ</option>
+<option value="482">Բլագոդարնոյե</option>
+<option value="98">Բյուրական</option>
+<option value="661">Բյուրակն</option>
+<option value="213">Բյուրավան</option>
+<option value="583">Բյուրեղավան</option>
+<option value="766">Բնունիս</option>
+<option value="483">Բովաձոր</option>
+<option value="584">Բուժական</option>
+<option value="214">Բուրաստան</option>
+<option value="585">Բջնի</option>
+<option value="767">Բռնակոթ</option>
+<option value="385">Գագարին</option>
+<option value="311">Գայ</option>
+<option value="386">Գանձակ</option>
+<option value="935">Գանձաքար</option>
+<option value="99">Գառնահովիտ</option>
+<option value="662">Գառնառիճ</option>
+<option value="586">Գառնի</option>
+<option value="387">Գավառ (Կամո)</option>
+<option value="484">Գարգառ</option>
+<option value="100">Գեղադիր</option>
+<option value="312">Գեղակերտ</option>
+<option value="101">Գեղաձոր</option>
+<option value="388">Գեղամաբակ</option>
+<option value="389">Գեղամասար</option>
+<option value="390">Գեղամավան</option>
+<option value="215">Գեղանիստ</option>
+<option value="768">Գեղանուշ</option>
+<option value="587">Գեղաշեն</option>
+<option value="485">Գեղասար</option>
+<option value="769">Գեղավանք</option>
+<option value="936">Գեղատափ</option>
+<option value="588">Գեղարդ</option>
+<option value="102">Գեղարոտ</option>
+<option value="391">Գեղարքունիք</option>
+<option value="392">Գեղաքար</option>
+<option value="770">Գեղի</option>
+<option value="393">Գեղհովիտ</option>
+<option value="216">Գետազատ</option>
+<option value="771">Գետաթաղ</option>
+<option value="937">Գետահովիտ</option>
+<option value="589">Գետամեջ</option>
+<option value="313">Գետաշեն</option>
+<option value="772">Գետաշեն</option>
+<option value="486">Գետավան</option>
+<option value="590">Գետարգել</option>
+<option value="103">Գետափ</option>
+<option value="217">Գետափնյա</option>
+<option value="394">Գետիկ</option>
+<option value="880">Գետիկվանք</option>
+<option value="663">Գետք</option>
+<option value="218">Գինեվետ</option>
+<option value="881">Գլաձոր</option>
+<option value="487">Գյուլագարակ</option>
+<option value="488">Գյուլլուդարա</option>
+<option value="664">Գյումրի</option>
+<option value="882">Գնդեվազ</option>
+<option value="883">Գնիշիկ</option>
+<option value="489">Գոգավան</option>
+<option value="490">Գոգարան</option>
+<option value="665">Գոգհովիտ</option>
+<option value="591">Գողթ</option>
+<option value="884">Գողթանիկ</option>
+<option value="773">Գոմարան</option>
+<option value="885">Գոմք</option>
+<option value="938">Գոշ</option>
+<option value="219">Գոռավան</option>
+<option value="592">Գոռգոչ</option>
+<option value="774">Գորայք</option>
+<option value="775">Գորիս</option>
+<option value="491">Գուգարք</option>
+<option value="776">Գուդեմնիս</option>
+<option value="666">Գուսանա</option>
+<option value="667">Գտաշեն</option>
+<option value="314">Գրիբոյեդով</option>
+<option value="220">Դալար</option>
+<option value="315">Դալարիկ</option>
+<option value="316">Դաշտ</option>
+<option value="104">Դաշտադեմ</option>
+<option value="221">Դաշտավան</option>
+<option value="222">Դաշտաքար</option>
+<option value="777">Դաստակերտ</option>
+<option value="105">Դավթաշեն</option>
+<option value="778">Դավիթ Բեկ</option>
+<option value="223">Դարակերտ</option>
+<option value="395">Դարանակ</option>
+<option value="779">Դարբաս</option>
+<option value="224">Դարբնիկ</option>
+<option value="668">Դարիկ</option>
+<option value="492">Դարպաս</option>
+<option value="396">Դդմաշեն</option>
+<option value="106">Դդմասար</option>
+<option value="939">Դեբեդավան</option>
+<option value="493">Դեբետ</option>
+<option value="940">Դեղձավան</option>
+<option value="225">Դեղձուտ</option>
+<option value="107">Դիան</option>
+<option value="941">Դիլիջան</option>
+<option value="226">Դիմիտրով</option>
+<option value="227">Դիտակ</option>
+<option value="942">Դիտավան</option>
+<option value="780">Դիցմայրի</option>
+<option value="317">Դողս</option>
+<option value="943">Դովեղ</option>
+<option value="397">Դպրաբակ</option>
+<option value="108">Դպրևանք</option>
+<option value="494">Դսեղ</option>
+<option value="228">Դվին</option>
+<option value="398">Դրախտիկ</option>
+<option value="886">Ելփին</option>
+<option value="781">Եղեգ</option>
+<option value="887">Եղեգիս</option>
+<option value="888">Եղեգնաձոր</option>
+<option value="229">Եղեգնավան</option>
+<option value="318">Եղեգնուտ</option>
+<option value="109">Եղիպատրուշ</option>
+<option value="669">Եղնաջուր</option>
+<option value="110">Եղնիկ</option>
+<option value="593">Եղվարդ</option>
+<option value="944">Ենոքավան</option>
+<option value="670">Երազգավորս</option>
+<option value="399">Երանոս</option>
+<option value="230">Երասխ</option>
+<option value="319">Երասխահուն</option>
+<option value="671">Երիզակ</option>
+<option value="111">Երնջատափ</option>
+<option value="320">Երվանդաշատ</option>
+<option value="231">Զանգակատուն</option>
+<option value="594">Զառ</option>
+<option value="889">Զառիթափ</option>
+<option value="400">Զառիվեր</option>
+<option value="321">Զարթոնք</option>
+<option value="112">Զարինջա</option>
+<option value="672">Զարիշատ</option>
+<option value="890">Զեդեա</option>
+<option value="401">Զոլաքար</option>
+<option value="402">Զովաբեր</option>
+<option value="595">Զովաշեն</option>
+<option value="113">Զովասար</option>
+<option value="596">Զովունի</option>
+<option value="597">Զովք</option>
+<option value="232">Զորակ</option>
+<option value="945">Զորական</option>
+<option value="673">Զորակերտ</option>
+<option value="598">Զորավան</option>
+<option value="674">Զույգաղբյուր</option>
+<option value="979">Զվարթնոց օդանավակայան</option>
+<option value="114">Թաթուլ</option>
+<option value="322">Թաիրով</option>
+<option value="115">Թալին</option>
+<option value="782">Թանահատ</option>
+<option value="891">Թառաթումբ</option>
+<option value="783">Թասիկ</option>
+<option value="675">Թավշուտ</option>
+<option value="599">Թեղենիք</option>
+<option value="495">Թեղուտ</option>
+<option value="116">Թթուջուր</option>
+<option value="117">Թլիկ</option>
+<option value="784">Թխկուտ</option>
+<option value="676">Թորոս</option>
+<option value="496">Թումանյան</option>
+<option value="946">Իծաքար</option>
+<option value="785">Իշխանասար</option>
+<option value="947">Իջևան</option>
+<option value="677">Իսահակյան</option>
+<option value="118">Իրինդ</option>
+<option value="233">Լանջազատ</option>
+<option value="403">Լանջաղբյուր</option>
+<option value="234">Լանջանիստ</option>
+<option value="235">Լանջառ</option>
+<option value="678">Լանջիկ</option>
+<option value="323">Լենուղի</option>
+<option value="497">Լեջան</option>
+<option value="324">Լեռնագոգ</option>
+<option value="404">Լեռնակերտ</option>
+<option value="498">Լեռնահովիտ</option>
+<option value="786">Լեռնաձոր</option>
+<option value="325">Լեռնամերձ</option>
+<option value="600">Լեռնանիստ</option>
+<option value="499">Լեռնանցք</option>
+<option value="500">Լեռնապատ</option>
+<option value="119">Լեռնապար</option>
+<option value="501">Լեռնավան</option>
+<option value="120">Լեռնարոտ</option>
+<option value="679">Լեռնուտ</option>
+<option value="502">Լերմոնտովո</option>
+<option value="405">Լիճք</option>
+<option value="787">Լծեն</option>
+<option value="406">Լճաշեն</option>
+<option value="407">Լճավան</option>
+<option value="408">Լճափ</option>
+<option value="948">Լճկաձոր</option>
+<option value="503">Լոռի Բերդ</option>
+<option value="788">Լոր</option>
+<option value="680">Լորասար</option>
+<option value="504">Լորուտ</option>
+<option value="326">Լուկաշին</option>
+<option value="121">Լուսա</option>
+<option value="681">Լուսակերտ</option>
+<option value="122">Լուսակն</option>
+<option value="409">Լուսակունք</option>
+<option value="949">Լուսահովիտ</option>
+<option value="950">Լուսաձոր</option>
+<option value="505">Լուսաղբյուր</option>
+<option value="748">Լուսաղբյուր</option>
+<option value="236">Լուսաշող</option>
+<option value="237">Լուսառատ</option>
+<option value="327">Խանջյան</option>
+<option value="951">Խաշթառակ</option>
+<option value="410">Խաչաղբյուր</option>
+<option value="952">Խաչարձան</option>
+<option value="892">Խաչիկ</option>
+<option value="238">Խաչփառ</option>
+<option value="789">Խդրանց</option>
+<option value="790">Խնածախ</option>
+<option value="506">Խնկոյան</option>
+<option value="791">Խնձորեսկ</option>
+<option value="893">Խնձորուտ</option>
+<option value="123">Խնուսիկ</option>
+<option value="792">Խոզնավար</option>
+<option value="793">Խոտ</option>
+<option value="328">Խորոնք</option>
+<option value="507">Ծաթեր</option>
+<option value="411">Ծակքար</option>
+<option value="508">Ծաղկաբեր</option>
+<option value="329">Ծաղկալանջ</option>
+<option value="124">Ծաղկահովիտ</option>
+<option value="601">Ծաղկաձոր</option>
+<option value="509">Ծաղկաշատ</option>
+<option value="125">Ծաղկաշեն</option>
+<option value="126">Ծաղկասար</option>
+<option value="953">Ծաղկավան</option>
+<option value="330">Ծաղկունք</option>
+<option value="682">Ծաղկուտ</option>
+<option value="794">Ծավ</option>
+<option value="412">Ծափաթաղ</option>
+<option value="331">Ծիածան</option>
+<option value="127">Ծիլքար</option>
+<option value="795">Ծղուկ</option>
+<option value="413">Ծովա</option>
+<option value="414">Ծովազարդ</option>
+<option value="415">Ծովակ</option>
+<option value="416">Ծովասար</option>
+<option value="417">Ծովինար</option>
+<option value="128">Կաթնաղբյուր</option>
+<option value="510">Կաթնաջուր</option>
+<option value="511">Կաթնառատ</option>
+<option value="894">Կալասար</option>
+<option value="418">Կալավան</option>
+<option value="419">Կախակն</option>
+<option value="796">Կաղնուտ</option>
+<option value="512">Կաճաճկուտ</option>
+<option value="602">Կամարիս</option>
+<option value="683">Կամխուտ</option>
+<option value="684">Կամո</option>
+<option value="954">Կայան</option>
+<option value="129">Կայք</option>
+<option value="239">Կանաչուտ</option>
+<option value="130">Կանիաշիր</option>
+<option value="131">Կանչ</option>
+<option value="797">Կապան</option>
+<option value="895">Կապույտ</option>
+<option value="603">Կապուտան</option>
+<option value="685">Կապս</option>
+<option value="686">Կառնուտ</option>
+<option value="798">Կավճուտ</option>
+<option value="132">Կարբի</option>
+<option value="799">Կարդ</option>
+<option value="604">Կարենիս</option>
+<option value="133">Կարին</option>
+<option value="420">Կարճաղբյուր</option>
+<option value="800">Կարճևան</option>
+<option value="421">Կարմիր</option>
+<option value="513">Կարմիր Աղեկ</option>
+<option value="687">Կարմրավան</option>
+<option value="688">Կարմրաքար</option>
+<option value="240">Կաքավաբերդ</option>
+<option value="134">Կաքավաձոր</option>
+<option value="689">Կաքավասար</option>
+<option value="896">Կեչուտ</option>
+<option value="955">Կիրանց</option>
+<option value="801">Կիցք</option>
+<option value="956">Կոթի</option>
+<option value="957">Կողբ</option>
+<option value="332">Կողբավան</option>
+<option value="514">Կողես</option>
+<option value="135">Կոշ</option>
+<option value="802">Կոռնիձոր</option>
+<option value="605">Կոտայք</option>
+<option value="422">Կութ</option>
+<option value="423">Կուտական</option>
+<option value="515">Կուրթան</option>
+<option value="803">Կուրիս</option>
+<option value="690">Կրաշեն</option>
+<option value="691">Կրասար</option>
+<option value="516">Կրուգլայա շիշկա</option>
+<option value="517">Հագվի</option>
+<option value="518">Հալավար</option>
+<option value="804">Հալիձոր</option>
+<option value="136">Հակո</option>
+<option value="958">Հաղարծին</option>
+<option value="959">Հաղթանակ</option>
+<option value="519">Հաղպատ</option>
+<option value="241">Հայանիստ</option>
+<option value="333">Հայթաղ</option>
+<option value="692">Հայկաձոր</option>
+<option value="334">Հայկաշեն</option>
+<option value="693">Հայկասար</option>
+<option value="335">Հայկավան</option>
+<option value="424">Հայրավանք</option>
+<option value="694">Հայրենյաց</option>
+<option value="606">Հանքավան</option>
+<option value="695">Հառիճ</option>
+<option value="607">Հատիս</option>
+<option value="696">Հարթաշեն</option>
+<option value="137">Հարթավան</option>
+<option value="805">Հարժիս</option>
+<option value="138">Հացաշեն</option>
+<option value="608">Հացավան</option>
+<option value="336">Հացիկ</option>
+<option value="697">Հացիկավան</option>
+<option value="897">Հերհեր&nbsp;&nbsp;</option>
+<option value="898">Հերմոն</option>
+<option value="139">Հնաբերդ</option>
+<option value="520">Հոբարձի</option>
+<option value="698">Հողմիկ</option>
+<option value="699">Հոռոմ</option>
+<option value="700">Հովիտ</option>
+<option value="521">Հովնանաձոր</option>
+<option value="701">Հովունի</option>
+<option value="337">Հովտամեջ</option>
+<option value="242">Հովտաշատ</option>
+<option value="243">Հովտաշեն</option>
+<option value="702">Հովտուն</option>
+<option value="960">Հովք</option>
+<option value="899">Հորբատեղ</option>
+<option value="900">Հորս</option>
+<option value="338">Հուշակերտ</option>
+<option value="609">Հրազդան</option>
+<option value="703">Ձիթհանքով</option>
+<option value="522">Ձյունաշող</option>
+<option value="425">Ձորա</option>
+<option value="523">Ձորագետ</option>
+<option value="140">Ձորագլուխ</option>
+<option value="806">Ձորակ</option>
+<option value="704">Ձորակապ</option>
+<option value="610">Ձորաղբյուր</option>
+<option value="524">Ձորամուտ</option>
+<option value="705">Ձորաշեն</option>
+<option value="807">Ձորաստան</option>
+<option value="426">Ձորավանք</option>
+<option value="706">Ղազանչի</option>
+<option value="141">Ղազարավան</option>
+<option value="707">Ղարիբջանյան</option>
+<option value="244">Ղուկասավան</option>
+<option value="525">Ղուրսալ</option>
+<option value="808">Ճակատեն</option>
+<option value="427">Ճամբարակ</option>
+<option value="428">Ճապկուտ</option>
+<option value="142">Ճարճակիս</option>
+<option value="526">Ճոճկան</option>
+<option value="429">Մադինա</option>
+<option value="901">Մալիշկա</option>
+<option value="611">Մայակովսկի</option>
+<option value="339">Մայիսյան</option>
+<option value="245">Մասիս</option>
+<option value="143">Մաստարա</option>
+<option value="708">Մարալիկ</option>
+<option value="527">Մարգահովիտ</option>
+<option value="340">Մարգարա</option>
+<option value="709">Մարմաշեն</option>
+<option value="246">Մարմարաշեն</option>
+<option value="612">Մարմարիկ</option>
+<option value="902">Մարտիրոս</option>
+<option value="430">Մարտունի</option>
+<option value="528">Մարց</option>
+<option value="431">Մաքենիս</option>
+<option value="529">Մեդովկա</option>
+<option value="144">Մելիք</option>
+<option value="530">Մեծ Այրում</option>
+<option value="710">Մեծ Մանթաշ</option>
+<option value="432">Մեծ Մասրիկ</option>
+<option value="531">Մեծ Պարնի</option>
+<option value="711">Մեծ Սարիար</option>
+<option value="712">Մեծ Սեպասար</option>
+<option value="145">Մեծաձոր</option>
+<option value="341">Մեծամոր</option>
+<option value="532">Մեծավան</option>
+<option value="533">Մեղվահովիտ</option>
+<option value="613">Մեղրաձոր</option>
+<option value="713">Մեղրաշատ</option>
+<option value="714">Մեղրաշեն</option>
+<option value="809">Մեղրի</option>
+<option value="342">Մերձավան</option>
+<option value="534">Միխայելովկա</option>
+<option value="146">Միջնատուն</option>
+<option value="147">Միրաք</option>
+<option value="247">Մխչյան</option>
+<option value="535">Մղարթ</option>
+<option value="343">Մյասնիկյան</option>
+<option value="903">Մոզրով</option>
+<option value="961">Մովսեսգյուղ</option>
+<option value="148">Մուղնի</option>
+<option value="344">Մուսալեռ</option>
+<option value="810">Մուսալլամ</option>
+<option value="715">Մուսայելյան</option>
+<option value="811">Մուցք</option>
+<option value="248">Մրգանուշ</option>
+<option value="345">Մրգաշատ</option>
+<option value="614">Մրգաշեն</option>
+<option value="346">Մրգաստան</option>
+<option value="249">Մրգավան</option>
+<option value="250">Մրգավետ</option>
+<option value="536">Յաղդան</option>
+<option value="347">Նալբանդյան</option>
+<option value="716">Նահապետավան</option>
+<option value="962">Նավուր</option>
+<option value="251">Նարեկ</option>
+<option value="537">Նեղոց</option>
+<option value="149">Ներքին Բազմաբերդ</option>
+<option value="433">Ներքին Գետաշեն</option>
+<option value="812">Ներքին Գիրաթաղ&nbsp;</option>
+<option value="813">Ներքին Խնձորեսկ</option>
+<option value="814">Ներքին Խոտանան</option>
+<option value="963">Ներքին Կարմիրաղբյուր</option>
+<option value="815">Ներքին Հանդ</option>
+<option value="434">Ներքին Շորժա</option>
+<option value="150">Ներքին Սասնաշեն</option>
+<option value="816">Նժդեհ</option>
+<option value="151">Նիգավան</option>
+<option value="152">Նիգատուն</option>
+<option value="252">Նիզամի</option>
+<option value="253">Նշավան</option>
+<option value="435">Նշխարք</option>
+<option value="254">Նոյակերտ</option>
+<option value="964">Նոյեմբերյան</option>
+<option value="538">Նովոսելցովո</option>
+<option value="619">Նոր</option>
+<option value="904">Նոր Ազնաբերդ</option>
+<option value="153">Նոր Ամանոս</option>
+<option value="817">Նոր Աստղաբերդ</option>
+<option value="154">Նոր Արթիկ</option>
+<option value="348">Նոր Արմավիր</option>
+<option value="349">Նոր Արտագերս</option>
+<option value="615">Նոր Արտամետ</option>
+<option value="616">Նոր Գեղի</option>
+<option value="155">Նոր Եդեսիա</option>
+<option value="617">Նոր Երզնկա</option>
+<option value="539">Նոր Խաչակապ</option>
+<option value="255">Նոր Խարբերդ</option>
+<option value="350">Նոր Կեսարիա</option>
+<option value="256">Նոր Կյուրին</option>
+<option value="618">Նոր Հաճն</option>
+<option value="436">Նորաբակ</option>
+<option value="72">Նորագավիթ</option>
+<option value="351">Նորակերտ</option>
+<option value="259">Նորամարգ</option>
+<option value="540">Նորամուտ</option>
+<option value="156">Նորաշեն</option>
+<option value="818">Նորաշենիկ</option>
+<option value="352">Նորապատ</option>
+<option value="353">Նորավան</option>
+<option value="437">Նորատուս</option>
+<option value="257">Նոր կյանք</option>
+<option value="717">Նորշեն</option>
+<option value="258">Նոր ուղի</option>
+<option value="73">Նուբարաշեն</option>
+<option value="620">Նուռնուս</option>
+<option value="819">Նռնաձոր</option>
+<option value="260">Շահումյան</option>
+<option value="354">Շահումյանի թռչնաֆաբրիկա</option>
+<option value="820">Շաղատ</option>
+<option value="261">Շաղափ</option>
+<option value="718">Շաղիկ</option>
+<option value="821">Շամբ</option>
+<option value="157">Շամիրամ</option>
+<option value="541">Շամլուղ</option>
+<option value="542">Շամուտ</option>
+<option value="905">Շատին</option>
+<option value="438">Շատջրեք</option>
+<option value="439">Շատվան</option>
+<option value="822">Շաքի</option>
+<option value="823">Շենաթաղ</option>
+<option value="158">Շենավան</option>
+<option value="355">Շենիկ</option>
+<option value="159">Շենկանի</option>
+<option value="824">Շիկահող</option>
+<option value="825">Շինուհայր</option>
+<option value="826">Շիշկերտ</option>
+<option value="719">Շիրակ</option>
+<option value="543">Շիրակամուտ</option>
+<option value="720">Շիրակավան</option>
+<option value="160">Շղարշիկ</option>
+<option value="544">Շնող</option>
+<option value="161">Շողակն</option>
+<option value="440">Շորժա</option>
+<option value="827">Շուռնուխ</option>
+<option value="828">Շվանիձոր</option>
+<option value="829">Շրվենանց</option>
+<option value="621">Ողջաբերդ</option>
+<option value="721">Ողջի</option>
+<option value="830">Ոչեթի</option>
+<option value="162">Ոսկեթաս</option>
+<option value="722">Ոսկեհասկ</option>
+<option value="163">Ոսկեհատ</option>
+<option value="965">Ոսկեպար</option>
+<option value="164">Ոսկեվազ</option>
+<option value="966">Ոսկեվան</option>
+<option value="262">Ոսկետափ</option>
+<option value="263">Ոստան</option>
+<option value="831">Որոտան</option>
+<option value="832">Ուժանիս</option>
+<option value="906">Ուղեձոր</option>
+<option value="833">Ույծ</option>
+<option value="165">Ուշի</option>
+<option value="166">Ուջան</option>
+<option value="545">Ուռուտ</option>
+<option value="546">Ուրասար</option>
+<option value="264">Ուրցալանջ</option>
+<option value="265">Ուրցաձոր</option>
+<option value="622">Չարենցավան</option>
+<option value="834">Չափնի</option>
+<option value="967">Չինարի</option>
+<option value="968">Չինչին</option>
+<option value="907">Չիվա</option>
+<option value="547">Չկալով</option>
+<option value="441">Չկալովկա</option>
+<option value="969">Չորաթան</option>
+<option value="167">Չքնաղ</option>
+<option value="723">Պաղակն</option>
+<option value="548">Պաղաղբյուր</option>
+<option value="970">Պառավաքար</option>
+<option value="266">Պարույր Սևակ</option>
+<option value="168">Պարտիզակ</option>
+<option value="724">Պեմզաշեն</option>
+<option value="549">Պետրովկա</option>
+<option value="550">Պուշկինո</option>
+<option value="623">Պռոշյան</option>
+<option value="971">Պտղավան</option>
+<option value="624">Պտղնի</option>
+<option value="356">Պտղունք</option>
+<option value="551">Պրիվոլնոյե</option>
+<option value="442">Ջաղացաձոր</option>
+<option value="169">Ջամշլու</option>
+<option value="357">Ջանֆիդա</option>
+<option value="725">Ջաջուռ</option>
+<option value="726">Ջաջուռավան</option>
+<option value="908">Ջերմուկ</option>
+<option value="443">Ջիլ</option>
+<option value="552">Ջիլիզա</option>
+<option value="972">Ջուջևան</option>
+<option value="625">Ջրաբեր</option>
+<option value="267">Ջրահովիտ</option>
+<option value="727">Ջրաձոր</option>
+<option value="170">Ջրամբար</option>
+<option value="268">Ջրաշեն</option>
+<option value="358">Ջրառատ</option>
+<option value="359">Ջրարբի</option>
+<option value="728">Ջրափի</option>
+<option value="626">Ջրվեժ</option>
+<option value="269">Ռանչպար</option>
+<option value="909">Ռինդ</option>
+<option value="171">Ռյա թազա</option>
+<option value="172">Սադունց</option>
+<option value="910">Սալլի</option>
+<option value="729">Սալուտ</option>
+<option value="835">Սալվարդ</option>
+<option value="173">Սաղմոսավան</option>
+<option value="270">Սայաթ-Նովա</option>
+<option value="836">Սառնակունք</option>
+<option value="730">Սառնաղբյուր</option>
+<option value="174">Սասունիկ</option>
+<option value="731">Սարա</option>
+<option value="175">Սարալանջ</option>
+<option value="732">Սարակապ</option>
+<option value="553">Սարահարթ</option>
+<option value="554">Սարամեջ</option>
+<option value="733">Սարապատ</option>
+<option value="911">Սարավան</option>
+<option value="734">Սարատակ</option>
+<option value="555">Սարատովկա</option>
+<option value="360">Սարդարապատ</option>
+<option value="973">Սարի</option>
+<option value="444">Սարուխան</option>
+<option value="556">Սարչապետ</option>
+<option value="445">Սեմյոնովկա</option>
+<option value="912">Սերս</option>
+<option value="837">Սզնակ</option>
+<option value="735">Սիզավետ</option>
+<option value="271">Սիս</option>
+<option value="272">Սիսավան</option>
+<option value="838">Սիսիան</option>
+<option value="176">Սիփան</option>
+<option value="273">Սիփանիկ</option>
+<option value="839">Սյունիք</option>
+<option value="446">Սոթք</option>
+<option value="627">Սոլակ</option>
+<option value="177">Սորիկ</option>
+<option value="178">Սուսեր</option>
+<option value="274">Սուրենավան</option>
+<option value="736">Սպանդարյան</option>
+<option value="557">Սպիտակ</option>
+<option value="840">Սվարանց</option>
+<option value="558">Սվերդլով</option>
+<option value="74">Ստեփանակերտ</option>
+<option value="559">Ստեփանավան</option>
+<option value="841">Սրաշեն</option>
+<option value="628">Սևաբերդ</option>
+<option value="913">Սևաժայռ</option>
+<option value="447">Սևան</option>
+<option value="842">Սևաքար</option>
+<option value="974">Սևքար</option>
+<option value="975">Վազաշեն</option>
+<option value="560">Վահագնաձոր</option>
+<option value="561">Վահագնի</option>
+<option value="75">Վահագնի թաղամաս</option>
+<option value="448">Վահան</option>
+<option value="737">Վահրամաբերդ</option>
+<option value="843">Վահրավար</option>
+<option value="449">Վաղաշեն</option>
+<option value="844">Վաղատին</option>
+<option value="845">Վաղատուր</option>
+<option value="361">Վաղարշապատ (Էջմիածին)</option>
+<option value="914">Վայք</option>
+<option value="562">Վանաձոր</option>
+<option value="362">Վանանդ</option>
+<option value="275">Վանաշեն</option>
+<option value="846">Վանեք</option>
+<option value="450">Վանևան</option>
+<option value="976">Վարագավան</option>
+<option value="563">Վարդաբլուր</option>
+<option value="915">Վարդահովիտ</option>
+<option value="451">Վարդաձոր</option>
+<option value="738">Վարդաղբյուր</option>
+<option value="363">Վարդանաշեն</option>
+<option value="847">Վարդանիձոր</option>
+<option value="276">Վարդաշատ</option>
+<option value="277">Վարդաշեն</option>
+<option value="848">Վարդավանք</option>
+<option value="739">Վարդաքար</option>
+<option value="452">Վարդենիկ</option>
+<option value="453">Վարդենիս</option>
+<option value="179">Վարդենուտ</option>
+<option value="454">Վարսեր</option>
+<option value="278">Վեդի</option>
+<option value="279">Վերին Արտաշատ</option>
+<option value="180">Վերին Բազմաբերդ</option>
+<option value="849">Վերին Գեղավանք</option>
+<option value="455">Վերին Գետաշեն</option>
+<option value="850">Վերին Գիրաթաղ&nbsp;</option>
+<option value="280">Վերին Դվին</option>
+<option value="851">Վերին Խոտանան</option>
+<option value="977">Վերին Կարմիրաղբյուր</option>
+<option value="456">Վերին Շորժա</option>
+<option value="629">Վերին Պտղնի</option>
+<option value="181">Վերին Սասնաշեն</option>
+<option value="182">Վերին Սասունիկ</option>
+<option value="852">Վերիշեն</option>
+<option value="916">Վերնաշեն</option>
+<option value="853">Տաթև</option>
+<option value="364">Տալվորիկ</option>
+<option value="854">Տանձավեր</option>
+<option value="855">Տանձատափ</option>
+<option value="365">Տանձուտ</option>
+<option value="564">Տաշիր</option>
+<option value="856">Տաշտուն</option>
+<option value="978">Տավուշ</option>
+<option value="857">Տավրուս</option>
+<option value="366">Տարոնիկ</option>
+<option value="281">Տափերական</option>
+<option value="858">Տեղ</option>
+<option value="183">Տեղեր</option>
+<option value="282">Տիգրանաշեն</option>
+<option value="859">Տոլորս</option>
+<option value="860">Տորունիք</option>
+<option value="457">Տորֆավան</option>
+<option value="740">Տուֆաշեն</option>
+<option value="458">Տրետուք</option>
+<option value="184">Ցամաքասար</option>
+<option value="861">Ցղունի</option>
+<option value="741">Ցողամարգ</option>
+<option value="459">Փամբակ</option>
+<option value="565">Փամբակ</option>
+<option value="742">Փանիկ</option>
+<option value="367">Փարաքար</option>
+<option value="185">Փարպի</option>
+<option value="630">Փյունիկ</option>
+<option value="368">Փշատավան</option>
+<option value="917">Փոռ</option>
+<option value="566">Փոքր Այրում</option>
+<option value="743">Փոքր Մանթաշ</option>
+<option value="460">Փոքր Մասրիկ</option>
+<option value="744">Փոքր Սարիար</option>
+<option value="745">Փոքր Սեպասար</option>
+<option value="283">Փոքր Վեդի</option>
+<option value="746">Փոքրաշեն</option>
+<option value="631">Քաղսի</option>
+<option value="284">Քաղցրաշեն</option>
+<option value="632">Քանաքեռավան</option>
+<option value="862">Քաշունի</option>
+<option value="863">Քաջարան</option>
+<option value="633">Քասախ</option>
+<option value="567">Քարաբերդ</option>
+<option value="918">Քարագլուխ</option>
+<option value="369">Քարակերտ</option>
+<option value="864">Քարահունջ</option>
+<option value="568">Քարաձոր</option>
+<option value="634">Քարաշամբ</option>
+<option value="865">Քարաշեն</option>
+<option value="569">Քարինջ</option>
+<option value="570">Քարկոփ</option>
+<option value="866">Քարուտ</option>
+<option value="747">Քեթի</option>
+<option value="186">Քուչակ</option>
+<option value="187">Օթևան</option>
+<option value="867">Օխտար</option>
+<option value="188">Օհանավան</option>
+<option value="571">Օձուն</option>
+<option value="189">Օշական</option>
+<option value="190">Օրգով</option>
+<option value="635">Ֆանտան</option>
+<option value="370">Ֆերիկ</option>
+<option value="572">Ֆիոլետովո</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="register-actions">
+<span>Գրանցվելով Դուք ընդունում եք <a href="https://buy.am/hy/custom/index/sCustom/51" title="Գաղտնիության քաղաքականություն"><span style="text-decoration:underline;">գաղտնիության քաղաքականությունը:</span></a></span>
+<div class="register--action">
+<button type="submit" class="register--submit btn is--primary is--large is--icon-right" name="Submit">Շարունակել</button>
+</div>
+</div>
+<input type="hidden" name="__csrf_token" value="5HSvYpq4dmMvorkc8jiDQbxZsNcg5W"></form>
+</div>
+<div class="register--login content block">
+<div class="register--new-customer">
+<a href="#registration" class="new-customer-btn btn is--icon-right" id="new-customer-action" data-collapsetarget="#registration">
+Գրանցում
+</a>
+</div>
+<div class="register--existing-customer panel has--border is--rounded">
+<h2 class="panel--title">Ես արդեն հաճախորդ եմ</h2>
+<div class="panel--body is--wide">
+<form name="sLogin" method="post" action="https://buy.am/hy/account/login/sTarget/note/sTargetAction/index" id="login--form">
+<input name="sTarget" type="hidden" value="note">
+<div class="register--login-email">
+<input name="email" placeholder="Ձեր էլեկտրոնային հասցեն" type="email" autocomplete="email" tabindex="1" value="" id="email" class="register--login-field">
+</div>
+<div class="register--login-password">
+<input name="password" placeholder="Ձեր գաղտնաբառը" type="password" autocomplete="current-password" tabindex="2" id="passwort" class="register--login-field">
+</div>
+<div class="register--login-lostpassword">
+<a href="https://buy.am/hy/account/password" title="Մոռացե՞լ եք Գաղտնաբառը">
+Մոռացե՞լ եք Գաղտնաբառը
+</a>
+</div>
+<div class="register--login-action">
+<button type="submit" class="register--login-btn btn is--primary is--large" name="Submit">
+Մուտք
+</button>
+</div>
+<div class="register-login-with-other-way">
+<p class="input-title">
+Մուտք այլ միջոցով
+</p>
+<div class="port1--hybrid--auth">
+<ul class="socials-list">
+<li>
+<a class="google-link" href="https://buy.am/hy/socialUser/login/provider/Google/sTarget/note/sTargetAction/index">
+<img src="https://buy.am/media/image/b8/0c/17/google-signin.png">
+</a>
+</li>
+<li>
+<a class="facebook-link" href="https://buy.am/hy/socialUser/login/provider/Facebook/sTarget/note/sTargetAction/index">
+<i class="fa fa-facebook" aria-hidden="true"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<input type="hidden" name="__csrf_token" value="5HSvYpq4dmMvorkc8jiDQbxZsNcg5W"></form>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
