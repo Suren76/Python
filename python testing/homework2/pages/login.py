@@ -6,7 +6,7 @@ from .basepage import BasePage
 class BuyAmLoginPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
-        self.page = "hy/register/index/sTarget/note/sTargetAction/index"
+        self.page_url = "hy/register/index/sTarget/note/sTargetAction/index"
 
     def login_email(self, email):
         email_input = self.driver.find_element(By.NAME, "email")
@@ -25,7 +25,7 @@ class BuyAmLoginPage(BasePage):
 class BuyAmRegisterPage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
-        self.page = "hy/register/index/sTarget/note/sTargetAction/index"
+        self.page_url = "hy/register/index/sTarget/note/sTargetAction/index"
 
     def register_personal_salutation(self, salutation):
         xpath = "//select[@id = 'salutation']"

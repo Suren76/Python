@@ -10,8 +10,6 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 class TestLambdatestTodoApp:
 
     #@pytest.fixture(autouse=True)
-    def _setup(self, driver):
-        self.driver = driver
 
     def test_page(self):
         self.driver.get("https://lambdatest.github.io/sample-todo-app/")

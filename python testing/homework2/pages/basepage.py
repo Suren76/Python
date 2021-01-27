@@ -3,8 +3,6 @@ import os
 import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
@@ -47,7 +45,7 @@ class BasePage:
         search_input.send_keys(phrase)
         self.driver.find_element(By.CLASS_NAME, "main-search--button").click()
 
-    def link_button(self, button_locat_xpath,time=10):
+    def link_button(self, button_locat_xpath):
         self.get()
-        elm = WebDriverWait(self.driver,time).until(EC.presence_of_element_located(By.XPATH , button_locat_xpath),'no element')
+        elm = self.driver.find_element(By.XPATH, button_locat_xpath)
         elm.click()

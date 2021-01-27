@@ -1,16 +1,14 @@
-from pages import basepage
 import pytest
 from selenium.webdriver.common.by import By
 
 
+@pytest.mark.usefixtures('add_page_attribute')
 @pytest.mark.usefixtures('chrome_driver')
 class TestFirstBlock:
     def test_new_letters_title(self):
-        self.page = basepage.BasePage(self.driver)
-        self.page.get()
         footer_title = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[1]/div[1]/p").text
         assert footer_title == 'Բաժանորդագրվեք մեր առաջարկներին'
-    
+
     def test_newsletter_field(self):
         self.page.get()
         self.page.driver.find_element(By.CLASS_NAME, "newsletter--field").send_keys("test@test.am")
@@ -30,12 +28,13 @@ class TestFirstBlock:
         ԿԱՅՔԻ ԲՈԼՈՐ ԻՐԱՎՈՒՆՔՆԵՐԸ ՊԱՏԿԱՆՈՒՄ ԵՆ ԿԱՆԴԵԼԼԱ ՍՊ ԸՆԿԵՐՈՒԹՅԱՆԸ\
         "
 
-@pytest.mark.usefixtures("chrome_driver")
+
+@pytest.mark.usefixtures('add_page_attribute')
+@pytest.mark.usefixtures('chrome_driver')
 class TestFooterMenu:
     def test_footer_menu_title(self):
-        self.page = basepage.BasePage(self.driver)
-        self.page.get()
-        assert self.page.driver.title == ""
+        title = "Բաժանորդագրվեք մեր առաջարկներին"
+        assert self.page.driver.find_element(By.XPATH, "//footer/div/div/div[1]/div[1]/p").text == title
 
     def test_footer_nav_link_1(self):
         self.page.link_button("/html/body/div[1]/footer/div/div/div[2]/div/nav/ul/li[1]/a")
@@ -53,14 +52,10 @@ class TestFooterMenu:
         self.page.link_button("/html/body/div[1]/footer/div/div/div[2]/div/nav/ul/li[4]/a")
         assert self.page.driver.current_url == 'https://buy.am/hy/custom/index/sCustom/50'
 
-@pytest.mark.usefixtures("chrome_driver")
+
+@pytest.mark.usefixtures('add_page_attribute')
+@pytest.mark.usefixtures('chrome_driver')
 class TestAssocatationsBlock:
-    
-    def test_get(self):
-        self.page = basepage.BasePage(self.driver)
-        self.get()
-
-
     def test_fb(self):
         self.page.link_button("/html/body/div[1]/footer/div/div/div[3]/div/ul[1]/li[1]/a")
         assert self.page.driver.current_url == 'https://www.facebook.com/BuyamOnlineMall/'
@@ -72,36 +67,30 @@ class TestAssocatationsBlock:
     def test_youtube(self):
         self.page.link_button("/html/body/div[1]/footer/div/div/div[3]/div/ul[1]/li[3]/a")
         assert self.page.driver.current_url == 'https://www.youtube.com/user/buyamofficial'
-        
-
 
     def test_visa(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[2]/li[1]").text
-        assert txt == "visa" 
+        assert txt == "visa"
 
     def test_master(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[2]/li[2]").text
-        assert txt == "master" 
- 
+        assert txt == "master"
+
     def test_arca(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[2]/li[3]").text
-        assert txt == "arca" 
-
-
+        assert txt == "arca"
 
     def test_idram(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[3]/li[1]").text
-        assert txt == "idram" 
+        assert txt == "idram"
 
     def test_mobidram(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[3]/li[2]").text
-        assert txt == "mobidram" 
+        assert txt == "mobidram"
 
     def test_payx(self):
         txt = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/footer/div/div/div[3]/div/ul[3]/li[3]").text
-        assert txt == "payx" 
-
-
+        assert txt == "payx"
 
     def test_google_play(self):
         self.page.link_button("/html/body/div[1]/footer/div/div/div[3]/div/ul[4]/li[1]/a")
@@ -110,5 +99,3 @@ class TestAssocatationsBlock:
     def test_app_store(self):
         self.page.link_button("/html/body/div[1]/footer/div/div/div[3]/div/ul[4]/li[2]/a")
         assert self.page.driver.current_url == 'https://itunes.apple.com/app/buy-am/id1224598831'
-
- 
