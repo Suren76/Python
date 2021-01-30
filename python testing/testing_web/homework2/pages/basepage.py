@@ -45,6 +45,7 @@ class BasePage:
         search_input.send_keys(phrase)
         self.driver.find_element(By.CLASS_NAME, "main-search--button").click()
 
+    @allure.step("Click button")
     def link_button(self, button_locat_xpath):
         self.get()
         elm = self.driver.find_element(By.XPATH, button_locat_xpath)

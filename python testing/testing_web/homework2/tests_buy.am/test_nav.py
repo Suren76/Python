@@ -1,4 +1,5 @@
 import pytest
+import allure
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 
@@ -6,29 +7,30 @@ from selenium.webdriver.common.by import By
 @pytest.mark.usefixtures('add_page_attribute')
 @pytest.mark.usefixtures('chrome_driver')
 class TestNavigationBlock:
+    @allure.story("Hover items")
     def test_menu_items_hover(self):
         hover = ActionChains(self.page.driver).move_to_element
 
-        elm_1 = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/nav/div/div[1]/ul/li[1]/div")
+        elm_1 = self.page.driver.find_element(By.XPATH, "//nav/div/div[1]/ul/li[1]/div")
         hover(elm_1).perform()
         parm_1 = "//div[1]/nav/div/div[1]/ul/li[1][@class='navigation--entry js--menu-scroller--item is--hovered']"
         parm_2 = '//nav/div/div[2][@class="advanced-menu is-opened"]/div[1][@class="menu--container menu--is-active"]'
         assert self.page.driver.find_element(By.XPATH, parm_1) and self.page.driver.find_element(By.XPATH, parm_2)
 
-        elm_2 = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/nav/div/div[1]/ul/li[2]/div")
+        elm_2 = self.page.driver.find_element(By.XPATH, "//nav/div/div[1]/ul/li[2]/div")
         hover(elm_2).perform()
         parm_1 = "//div[1]/nav/div/div[1]/ul/li[2][@class='navigation--entry js--menu-scroller--item is--hovered']"
         parm_2 = '//nav/div/div[2][@class="advanced-menu is-opened"]/div[2][@class="menu--container menu--is-active"]'
         assert self.page.driver.find_element(By.XPATH, parm_1) and self.page.driver.find_element(By.XPATH, parm_2)
 
-        elm_3 = self.page.driver.find_element(By.XPATH, "/html/body/div[1]/nav/div/div[1]/ul/li[3]/div")
+        elm_3 = self.page.driver.find_element(By.XPATH, "//nav/div/div[1]/ul/li[3]/div")
         hover(elm_3).perform()
         parm_1 = "//div[1]/nav/div/div[1]/ul/li[3][@class='navigation--entry js--menu-scroller--item is--hovered']"
         parm_2 = '//nav/div/div[2][@class="advanced-menu is-opened"]/div[3][@class="menu--container menu--is-active"]'
         assert self.page.driver.find_element(By.XPATH, parm_1) and self.page.driver.find_element(By.XPATH, parm_2)
 
     # 1    Սուպերմարկետ
-
+    
     def test_advanced_menu_item_1(self):
         self.page.get()
         self.page.link_button("//div[2]/div[1]/div/ul[1]/li[1]")

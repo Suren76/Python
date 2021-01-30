@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import allure
 from .basepage import BasePage
 
 
@@ -17,7 +17,7 @@ class BuyAmLoginPage(BasePage):
         password_input = self.driver.find_element(By.NAME, "password")
         password_input.clear()
         password_input.send_keys(str(password))
-
+    @allure.step("Log in")
     def log_in_account(self):
         self.driver.find_element(By.XPATH, "//button[@class='register--login-btn btn is--primary is--large']").click()
 
@@ -59,5 +59,6 @@ class BuyAmRegisterPage(BasePage):
     def register_address(self, address):
         self.driver.find_element(By.NAME, "register[billing][street]").send_keys(address)
 
+    @allure.step("Reister")
     def register_account(self):
         self.driver.find_element(By.XPATH, "//div[@class='register--action']/button").click()
