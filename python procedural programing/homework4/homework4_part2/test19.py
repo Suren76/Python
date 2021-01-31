@@ -1,16 +1,10 @@
 #Input   Output
-#5  ‘five’
-#25  ‘twenty five’
-#425  “four hundred twenty five”
-#9425  “nine thousand four hundred twenty five”
-#79425  “seventy nine thousand four hundred twenty five”
-#179425  “one hundred seventy nine thousand four hundred twenty five”
-
-
-
-
-
-
+#5  ‘Five’
+#25  ‘Twenty five’
+#425  “Four hundred twenty five”
+#9425  “Nine thousand four hundred twenty five”
+#79425  “Seventy nine thousand four hundred twenty five”
+#179425  “One hundred seventy nine thousand four hundred twenty five”
 
 
 num2words = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', \
@@ -27,11 +21,11 @@ def n2w(n):
             return (x[1])
         elif x[0] > n:
             n = int(str(n)[:2])
-            v = (num2words[n-n%10] + num2words[n%10].lower())
+            v = (num2words[n-n%10] + ' ' + num2words[n%10].lower())
             return v
         elif n > 90 and n < 100:
             n = int(str(n)[:2])
-            v = (num2words[90] + num2words[n%10].lower())
+            v = (num2words[90] + ' ' + num2words[n%10].lower())
             return v
 
 num = input()
@@ -39,27 +33,33 @@ x =[]
 if len(num) == 6:
     if int(num[:1]) != 0:
         r = (num2words[int(num[:1])],"hundred")
-        x.append(r)
+        x.append(r[0])
+        x.append(r[1])
     num = str(num)[1:]
 if len(num) == 4 or len(num) == 5:
     if int(num[:1]) != 0:
         if len(num) == 4:
             d = (num2words[int(num[:1])],"thousand")
-            x.append(d)
+            x.append(d[0])
+            x.append(d[1])
         if len(num) == 5:
             num1 = int(num[:2])
             d1 = (n2w(num1),"thousand")
-            x.append(d1)
+            x.append(d1[0])
+            x.append(d1[1])
             num = str(num)[1:]
     num = str(num)[1:]
 if len(num) == 3:
     if int(num[:1]) != 0:
         b = (num2words[int(num[:1])],"hundred")
-        x.append(b)
+        x.append(b[0])
+        x.append(b[1])
     num = str(num)[1:]
 if len(num) <= 2 :
     num = int(num)
     x.append(n2w(num))
-#print(b,d)
-print(x)
+
+#x =  [x_w.lower() for x_w in x[1:]]
+
+print(x[0]+" "+' '.join(x[1:]).lower())
 
