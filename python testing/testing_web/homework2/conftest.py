@@ -1,8 +1,9 @@
 from datetime import datetime
 from os import environ
-from pages.basepage import BasePage
 
+import allure
 import pytest
+from pages.basepage import BasePage
 from selenium import webdriver
 
 
@@ -19,9 +20,9 @@ def pytest_runtest_makereport(item):
     outcome = yield
     rep = outcome.get_result()
     if rep.outcome == 'failed':
-        pass
-        item.cls.driver.get_screenshot_as_file(
-            f"./fail_{item.name}_{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}.png")
+        allure.attach(f"fail_{item.name}_{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}.png",
+                      item.cls.driver.get_screenshot_as_png(),
+                      attachment_type=allure.attachment_type.PNG)
 
 
 def pytest_addoption(parser):
